@@ -1,0 +1,4 @@
+{
+  "extends": "./tsconfig.json",
+  "include": ["src/**/*.ts*", "./gatsby-config.ts", "gatsby-node.ts"]
+}
