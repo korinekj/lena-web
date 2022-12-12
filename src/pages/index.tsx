@@ -1,9 +1,13 @@
-import * as React from 'react';
+import * as React from "react";
+import Layout from "../components/Layout";
 
 export default function Home() {
-  const test: string = 5;
-
-  console.log(test);
-
-  return <div>Hello world!</div>;
+  return (
+    <Layout>
+      <main>
+        <header>HEADER</header>
+        <section>section</section>
+      </main>
+    </Layout>
+  );
 }
