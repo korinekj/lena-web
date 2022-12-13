@@ -14,6 +14,8 @@
   },
   "dependencies": {
     "gatsby": "^5.2.0",
+    "gatsby-plugin-sass": "^6.3.0",
+    "normalize.css": "^8.0.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
@@ -41,6 +43,7 @@
     "eslint-plugin-react": "^7.28.0",
     "eslint-plugin-react-hooks": "^4.3.0",
     "prettier": "^2.8.1",
+    "sass": "^1.56.2",
     "typescript": "^4.9.4"
   }
 }
