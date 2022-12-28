@@ -5,8 +5,7 @@ export default function Home() {
   return (
     <Layout>
       <main>
-        <header>HEADER</header>
-        <section>section</section>
+        <h1>Main</h1>
       </main>
     </Layout>
   );

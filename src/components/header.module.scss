@@ -1,0 +1,15 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+  .header__nav-links {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+
+    .header__nav-link {
+      color: blue;
+    }
+  }
+}
