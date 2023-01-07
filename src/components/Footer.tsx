@@ -10,20 +10,22 @@ import * as styles from "./footer.module.scss";
 
 function Footer() {
   return (
-    <footer className='main-footer'>
+    <footer className={styles.footer}>
       <div className={styles.container}>
-        <div className={styles.about}>
+        <div className={`${styles.about} ${styles.containerColumn}`}>
           <h4>Kdo jsem</h4>
-          <img src={ChefIcon} alt='' />
+          <img src={ChefIcon} alt='' className={styles.chef} />
           <p>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit.
             Repudiandae obcaecati, modi debitis dignissimos provident excepturi!
           </p>
         </div>
 
-        <div className={styles.logo}>FOOTER LOGO / ODKAZ NA HOME</div>
+        <div className={`${styles.logo} ${styles.containerColumn}`}>
+          FOOTER LOGO / ODKAZ NA HOME
+        </div>
 
-        <div className={styles.contact}>
+        <div className={`${styles.contact} ${styles.containerColumn}`}>
           <h4>Kontaktní informace</h4>
           <ul>
             <li>

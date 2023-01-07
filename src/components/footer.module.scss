@@ -1,11 +1,47 @@
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.footer {
+  width: 80vw;
+  margin: 0 auto;
 
-  .about,
-  .logo,
-  .contact {
-    flex: 1;
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+
+    .container-column {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .about {
+      img.chef {
+        height: 4rem;
+      }
+
+      p {
+        width: 50%;
+      }
+    }
+
+    .logo {
+      color: red;
+    }
+
+    .contact {
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+
+        li {
+          display: flex;
+          align-items: center;
+          gap: 1rem;
+        }
+      }
+    }
   }
 }
