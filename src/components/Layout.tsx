@@ -3,7 +3,7 @@ import Footer from "./Footer";
 import Header from "./Header";
 
 import "normalize.css";
-import "../assets/css/index.scss";
+import "../assets/css/index.module.scss";
 
 interface Props {
   children: React.ReactNode;
