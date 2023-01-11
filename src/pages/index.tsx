@@ -9,7 +9,7 @@ export default function Home() {
     <>
       <Layout>
         <main className={global.page}>
-          <h1>Main</h1>
+          <h1>main page</h1>
         </main>
       </Layout>
       <GoogleMap />
