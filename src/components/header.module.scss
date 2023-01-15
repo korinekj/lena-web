@@ -7,7 +7,7 @@
     display: flex;
     justify-content: space-between;
 
-    .nav-btn {
+    button.nav-btn {
       display: none;
     }
   }
@@ -40,6 +40,10 @@
       flex-direction: column;
       height: 0;
       overflow: hidden;
+    }
+    .show-links {
+      height: auto;
+      overflow: visible;
     }
   }
 }
