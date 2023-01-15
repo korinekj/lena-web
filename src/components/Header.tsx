@@ -1,13 +1,20 @@
 import React from "react";
 import { Link } from "gatsby";
+import { FiAlignJustify } from "react-icons/fi";
 
 import * as styles from "./header.module.scss";
 
 function Header() {
   return (
     <header className={styles.header}>
-      <div className='header__logo'>
-        <h1>LOGO</h1>
+      <div className={styles.navHeader}>
+        <div className='header__logo'>
+          <h1>LOGO</h1>
+        </div>
+        <button type='button' className={styles.navBtn}>
+          <FiAlignJustify />
+          test
+        </button>
       </div>
 
       <nav className={styles.header__navLinks}>

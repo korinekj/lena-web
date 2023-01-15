@@ -3,6 +3,15 @@
   align-items: center;
   justify-content: space-evenly;
 
+  .nav-header {
+    display: flex;
+    justify-content: space-between;
+
+    .nav-btn {
+      display: none;
+    }
+  }
+
   .header__nav-links {
     display: flex;
     justify-content: center;
@@ -10,6 +19,27 @@
 
     .header__nav-link {
       color: blue;
+    }
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .header {
+    flex-direction: column;
+
+    .nav-header {
+      justify-content: space-between;
+      width: 90%;
+
+      button.nav-btn {
+        display: inline-block;
+      }
+    }
+
+    .header__nav-links {
+      flex-direction: column;
+      height: 0;
+      overflow: hidden;
     }
   }
 }
