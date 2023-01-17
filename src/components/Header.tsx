@@ -2,6 +2,8 @@ import React from "react";
 import { Link } from "gatsby";
 import { FiAlignJustify } from "react-icons/fi";
 
+import Logo from "../assets/images/logo.png";
+
 import * as styles from "./header.module.scss";
 
 function Header() {
@@ -14,7 +16,9 @@ function Header() {
     <header className={styles.header}>
       <div className={styles.navHeader}>
         <div className='header__logo'>
-          <h1>LOGO</h1>
+          <Link to='/'>
+            <img src={Logo} alt='logo' id={styles.logo} />
+          </Link>
         </div>
         <button type='button' className={styles.navBtn} onClick={toggleLinks}>
           <FiAlignJustify />

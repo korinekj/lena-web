@@ -1,10 +1,13 @@
 import React from "react";
+import { Link } from "gatsby";
 
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import PhoneIphoneIcon from "@mui/icons-material/PhoneIphone";
 import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
 import LocationOnOutlinedIcon from "@mui/icons-material/LocationOnOutlined";
+
 import ChefIcon from "../assets/images/chef-avatar.png";
+import Logo from "../assets/images/logo.png";
 
 import * as styles from "./footer.module.scss";
 
@@ -22,7 +25,9 @@ function Footer() {
         </div>
 
         <div className={`${styles.logo} ${styles.containerColumn}`}>
-          FOOTER LOGO / ODKAZ NA HOME
+          <Link to='/'>
+            <img src={Logo} alt='logo' id={styles.logo} />
+          </Link>
         </div>
 
         <div className={`${styles.contact} ${styles.containerColumn}`}>
