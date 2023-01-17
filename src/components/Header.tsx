@@ -32,8 +32,8 @@ function Header() {
         <Link to='/nabidka' className={styles.header__navLink}>
           Nabídka
         </Link>
-        <Link to='/svatby' className={styles.header__navLink}>
-          Svatby
+        <Link to='/dorty' className={styles.header__navLink}>
+          Dorty
         </Link>
         <Link to='/cukrovi' className={styles.header__navLink}>
           Cukroví
