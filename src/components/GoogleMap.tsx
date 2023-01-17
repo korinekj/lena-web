@@ -8,7 +8,7 @@ function GoogleMap() {
       <iframe
         className={styles.map}
         title='map'
-        src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2604.1213565533553!2d15.19457071585113!3d49.25514568064204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470cd94dfc8f6eab%3A0x4ce636c7d6eaeb9b!2zTmEgVsO9c2x1bsOtIDYzMiwgMzk0IDY4IMW9aXJvdm5pY2U!5e0!3m2!1scs!2scz!4v1673302735256!5m2!1scs!2scz'
+        src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d651.0357771850443!2d15.186855829249938!3d49.2547333740433!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470cd956c7093931%3A0x235368bab6e67987!2zxb1pxb5rb3ZhIDM3NiwgMzk0IDY4IMW9aXJvdm5pY2U!5e0!3m2!1scs!2scz!4v1673947033459!5m2!1scs!2scz'
         width='600'
         height='350'
         style={{ border: 0 }}

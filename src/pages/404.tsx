@@ -9,7 +9,7 @@ function Error() {
       <main className={styles.errorPage}>
         <section>
           <h1>404</h1>
-          <h3>page not found</h3>
+          <h3>Stránka nenalezena</h3>
         </section>
       </main>
     </Layout>
