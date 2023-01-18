@@ -8,7 +8,7 @@ import * as styles from "./header.module.scss";
 
 function Header() {
   const toggleLinks = () => {
-    const links = document.querySelectorAll(`.${styles.header__navLinks}`)[0];
+    const links = document.querySelectorAll(`.${styles.headerNavLinks}`)[0];
     links.classList.toggle(styles.showLinks);
   };
 
@@ -20,29 +20,30 @@ function Header() {
             <img src={Logo} alt='logo' id={styles.logo} />
           </Link>
         </div>
+
         <button type='button' className={styles.navBtn} onClick={toggleLinks}>
           <FiAlignJustify />
           test
         </button>
       </div>
 
-      <nav className={styles.header__navLinks}>
-        <Link to='/' className={styles.header__navLink}>
+      <nav className={styles.headerNavLinks}>
+        <Link to='/' className={styles.headerNavLink}>
           Úvod
         </Link>
-        <Link to='/o-mne' className={styles.header__navLink}>
+        <Link to='/o-mne' className={styles.headerNavLink}>
           O mně
         </Link>
-        <Link to='/nabidka' className={styles.header__navLink}>
+        <Link to='/nabidka' className={styles.headerNavLink}>
           Nabídka
         </Link>
-        <Link to='/dorty' className={styles.header__navLink}>
+        <Link to='/dorty' className={styles.headerNavLink}>
           Dorty
         </Link>
-        <Link to='/cukrovi' className={styles.header__navLink}>
+        <Link to='/cukrovi' className={styles.headerNavLink}>
           Cukroví
         </Link>
-        <Link to='/kontakt' className={styles.header__navLink}>
+        <Link to='/kontakt' className={styles.headerNavLink}>
           Kontakt
         </Link>
       </nav>

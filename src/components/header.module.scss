@@ -17,12 +17,12 @@
     }
   }
 
-  .header__nav-links {
+  .headerNavLinks {
     display: flex;
     justify-content: center;
     gap: 3rem;
 
-    .header__nav-link {
+    .headerNavLink {
       color: blue;
     }
   }
@@ -41,7 +41,7 @@
       }
     }
 
-    .header__nav-links {
+    .headerNavLinks {
       flex-direction: column;
       height: 0;
       overflow: hidden;
