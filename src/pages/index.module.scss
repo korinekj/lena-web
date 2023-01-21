@@ -1,0 +1,34 @@
+.hero-image-section {
+  position: relative; /* so that the text container can be positioned absolutely */
+  width: 100%;
+  height: 600px; /* adjust as needed */
+  overflow: hidden; /* hides any overflow */
+}
+
+.hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* scales the image to cover the entire container */
+}
+
+.hero-image-text-container {
+  position: absolute;
+  top: 50%; /* centers the text container vertically */
+  left: 50%; /* centers the text container horizontally */
+  transform: translate(
+    -50%,
+    -50%
+  ); /* offsets the text container from the center */
+  color: white;
+  text-align: center;
+}
+
+.hero-image-text {
+  font-size: 3rem; /* adjust as needed */
+  font-weight: bold;
+  margin-bottom: 1rem; /* adds space between the text and subtext */
+}
+
+.hero-image-subtext {
+  font-size: 1.5rem; /* adjust as needed */
+}
