@@ -7,7 +7,7 @@ import HeroImage from "../components/HeroImage";
 export default function Home() {
   return (
     <Layout>
-      <main className={global.page}>
+      <main>
         <HeroImage />
       </main>
     </Layout>
