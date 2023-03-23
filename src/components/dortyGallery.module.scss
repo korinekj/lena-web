@@ -1,0 +1,13 @@
+.imgWrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+
+  .img {
+    img {
+      height: 250px;
+      width: 250px;
+    }
+  }
+}
