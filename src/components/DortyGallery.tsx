@@ -4,30 +4,8 @@ import { GatsbyImage } from "gatsby-plugin-image";
 
 import * as styles from "./dortyGallery.module.scss";
 
-function DortyGallery() {
-  // eslint-disable-next-line @typescript-eslint/no-use-before-define
-  const data = useStaticQuery(query);
-
-  console.log(data);
-
-  return (
-    <section className={styles.imgWrapper}>
-      {data.allFile.nodes.map((item) => (
-        <article key={item.id} className={styles.img}>
-          <a href={item.publicURL}>
-            <GatsbyImage
-              image={item.childImageSharp.gatsbyImageData}
-              alt={item.base}
-            />
-          </a>
-        </article>
-      ))}
-    </section>
-  );
-}
-
 const query = graphql`
-  {
+  query DortImage {
     allFile(filter: { sourceInstanceName: { eq: "dorty" } }) {
       nodes {
         id
@@ -40,5 +18,25 @@ const query = graphql`
     }
   }
 `;
+
+function DortyGallery() {
+  const { imgWrapper, img } = styles;
+
+  const {
+    allFile: { nodes },
+  } = useStaticQuery(query);
+
+  return (
+    <section className={imgWrapper}>
+      {nodes.map(({ id, publicURL, childImageSharp, base }) => (
+        <article key={id} className={img}>
+          <a href={publicURL}>
+            <GatsbyImage image={childImageSharp.gatsbyImageData} alt={base} />
+          </a>
+        </article>
+      ))}
+    </section>
+  );
+}
 
 export default DortyGallery;
