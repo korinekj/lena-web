@@ -4,6 +4,9 @@ import { GatsbyImage } from "gatsby-plugin-image";
 
 import * as styles from "./dortyGallery.module.scss";
 
+/**
+ * GraphQL query to retrieve images from the "dorty" folder.
+ */
 const query = graphql`
   query DortImage {
     allFile(filter: { sourceInstanceName: { eq: "dorty" } }) {
@@ -20,12 +23,15 @@ const query = graphql`
 `;
 
 function DortyGallery() {
+  // Extracting styles using destructuring
   const { imgWrapper, img } = styles;
 
+  // Retrieving data with the useStaticQuery hook and the GraphQL query defined above
   const {
     allFile: { nodes },
   } = useStaticQuery(query);
 
+  // Rendering a gallery section
   return (
     <section className={imgWrapper}>
       {nodes.map(({ id, publicURL, childImageSharp, base }) => (
