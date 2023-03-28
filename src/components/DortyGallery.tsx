@@ -2,6 +2,8 @@ import React from "react";
 import { graphql, useStaticQuery } from "gatsby";
 import { GatsbyImage } from "gatsby-plugin-image";
 
+import type { QueryResult } from "../types/types.js";
+
 import * as styles from "./dortyGallery.module.scss";
 
 /**
@@ -29,7 +31,7 @@ function DortyGallery() {
   // Retrieving data with the useStaticQuery hook and the GraphQL query defined above
   const {
     allFile: { nodes },
-  } = useStaticQuery(query);
+  } = useStaticQuery<QueryResult>(query);
 
   // Rendering a gallery section
   return (
@@ -37,7 +39,10 @@ function DortyGallery() {
       {nodes.map(({ id, publicURL, childImageSharp, base }) => (
         <article key={id} className={img}>
           <a href={publicURL}>
-            <GatsbyImage image={childImageSharp.gatsbyImageData} alt={base} />
+            <GatsbyImage
+              image={childImageSharp.gatsbyImageData}
+              alt={`${base} image`}
+            />
           </a>
         </article>
       ))}
