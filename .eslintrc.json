@@ -7,5 +7,6 @@
   "extends": ["airbnb", "airbnb-typescript", "prettier"],
   "rules": {
     "no-console": "warn"
-  }
+  },
+  "include": ["gatsby-browser.ts"]
 }

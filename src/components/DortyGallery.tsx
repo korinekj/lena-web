@@ -26,7 +26,7 @@ const query = graphql`
 
 function DortyGallery() {
   // Extracting styles using destructuring
-  const { imgWrapper, img } = styles;
+  const { imgGallery, img } = styles;
 
   // Retrieving data with the useStaticQuery hook and the GraphQL query defined above
   const {
@@ -35,10 +35,10 @@ function DortyGallery() {
 
   // Rendering a gallery section
   return (
-    <section className={imgWrapper}>
+    <section className={imgGallery}>
       {nodes.map(({ id, publicURL, childImageSharp, base }) => (
         <article key={id} className={img}>
-          <a href={publicURL}>
+          <a href={publicURL} data-lightbox='dorty' data-title='test'>
             <GatsbyImage
               image={childImageSharp.gatsbyImageData}
               alt={`${base} image`}
