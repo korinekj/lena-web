@@ -38,7 +38,7 @@ function DortyGallery() {
     <section className={imgGallery}>
       {nodes.map(({ id, publicURL, childImageSharp, base }) => (
         <article key={id} className={img}>
-          <a href={publicURL} data-lightbox='dorty' data-title='test'>
+          <a href={publicURL} data-lightbox='dorty' data-title={base}>
             <GatsbyImage
               image={childImageSharp.gatsbyImageData}
               alt={`${base} image`}
