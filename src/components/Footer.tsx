@@ -19,8 +19,12 @@ function Footer() {
           <h4>Kdo jsem</h4>
           <img src={ChefIcon} alt='' className={styles.chef} />
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-            Repudiandae obcaecati, modi debitis dignissimos provident excepturi!
+            Unikátní a lahodné dorty na každou příležitost! Kontaktujte mě pro
+            nejlepší dort na Vaší speciální událost.
+          </p>
+          <p>
+            Vaše speciální událost si zaslouží speciální dort. Dejte mi vědět a
+            já Vám připravím unikátní a lahodný dort na míru
           </p>
         </div>
 
