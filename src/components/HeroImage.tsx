@@ -5,20 +5,23 @@ import { Link } from "gatsby";
 import * as styles from "./heroImage.module.scss";
 
 function HeroImage() {
-  return (
-    <div className={styles.heroImage}>
-      <div className={styles.heroText}>
-        <h1>
-          Zakázkové pečení<span>dortů a zákusků</span>
-        </h1>
+  const { heroImage, heroText, hero } = styles;
 
-        <Link to='/kontakt'>
-          <button type='button' role='link'>
-            Objednej si zde
-          </button>
-        </Link>
+  return (
+    <section className={hero}>
+      <div className={heroImage}>
+        <div className={heroText}>
+          <h1>
+            Zakázkové pečení<span>dortů a zákusků</span>
+          </h1>
+          <Link to='/kontakt'>
+            <button type='button' role='link'>
+              Objednej si zde
+            </button>
+          </Link>
+        </div>
       </div>
-    </div>
+    </section>
   );
 }
 

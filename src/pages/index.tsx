@@ -3,12 +3,12 @@ import Layout from "../components/Layout";
 
 import HeroImage from "../components/HeroImage";
 
+import "normalize.css";
+
 export default function Home() {
   return (
     <Layout>
-      <main>
-        <HeroImage />
-      </main>
+      <HeroImage />
     </Layout>
   );
 }
