@@ -9,7 +9,7 @@ import LocationOnOutlinedIcon from "@mui/icons-material/LocationOnOutlined";
 import ChefIcon from "../assets/images/chef-avatar.png";
 import Logo from "../assets/images/logo.png";
 
-import * as GLOBAL from "../assets/css/global.module.scss";
+import * as global from "../assets/css/global.module.scss";
 import * as styles from "./footer.module.scss";
 
 function Footer() {
@@ -17,7 +17,7 @@ function Footer() {
 
   return (
     <footer className={site__footer}>
-      <div className={GLOBAL.container}>
+      <div className={global.container}>
         <div className={col}>
           <h4>Kdo jsem</h4>
           <img src={ChefIcon} alt='' className={chef} />

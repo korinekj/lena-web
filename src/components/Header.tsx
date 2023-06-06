@@ -3,8 +3,12 @@ import { Link } from "gatsby";
 
 import Logo from "../assets/images/logo.png";
 
-import * as GLOBAL from "../assets/css/global.module.scss";
+import * as global from "../assets/css/global.module.scss";
 import * as styles from "./header.module.scss";
+
+import PhoneIphoneIcon from "@mui/icons-material/PhoneIphone";
+import FacebookIcon from "@mui/icons-material/Facebook";
+import InstagramIcon from "@mui/icons-material/Instagram";
 
 function Header() {
   const toggleLinks = () => {
@@ -23,14 +27,32 @@ function Header() {
     nav__item,
     nav__link,
     showLinks,
+    phone,
     social_icons,
+    showMobile,
+    mainHeader,
+    muiFacebook,
+    muiInstagram,
   } = styles;
+
+  const { container } = global;
 
   return (
     <header className={site__header}>
-      <div className={GLOBAL.container}>
+      <section className={`${container} ${showMobile}`}>
+        <div className={phone}>
+          <PhoneIphoneIcon />
+          <p>+420 111 111 111</p>
+        </div>
+        <div className={social_icons}>
+          <FacebookIcon className={muiFacebook} />
+          <InstagramIcon className={muiInstagram} />
+        </div>
+      </section>
+
+      <section className={`${container} ${mainHeader}`}>
         <Link className={logo} to='/'>
-          <img src={Logo} alt='logo' id={styles.logo} />
+          <img src={Logo} alt='logo' id={logo} />
         </Link>
 
         <div className={menu}>
@@ -71,12 +93,8 @@ function Header() {
               </li>
             </ul>
           </nav>
-          <div className={social_icons}>
-            <a href='#'>facebook</a>
-            <a href='#'>instagram</a>
-          </div>
         </div>
-      </div>
+      </section>
     </header>
   );
 }

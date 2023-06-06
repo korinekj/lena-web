@@ -1,0 +1,41 @@
+.showMobile {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .phone {
+    display: flex;
+    align-items: center;
+  }
+
+  .social_icons {
+    display: flex;
+    align-items: center;
+
+    .muiFacebook {
+      color: #3b5998;
+    }
+
+    .muiInstagram {
+      color: #c32aa3;
+    }
+  }
+}
+
+.mainHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .logo {
+    width: 100%;
+
+    #logo {
+      width: 250px;
+    }
+  }
+
+  .menu {
+    width: 100%;
+  }
+}
