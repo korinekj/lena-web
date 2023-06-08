@@ -28,14 +28,33 @@
   align-items: center;
 
   .logo {
-    width: 100%;
-
     #logo {
       width: 250px;
     }
   }
 
   .menu {
-    width: 100%;
+    .menu_btn__burger,
+    .menu_btn__burger::before,
+    .menu_btn__burger::after {
+      background-color: black;
+      width: 2em;
+      border-radius: 6px;
+      height: 6px;
+      transition: all 0.5s ease-in-out;
+    }
+
+    .menu_btn__burger::before,
+    .menu_btn__burger::after {
+      position: absolute;
+      content: "";
+    }
+
+    .menu_btn__burger::before {
+      transform: translateY(-12px);
+    }
+    .menu_btn__burger::after {
+      transform: translateY(12px);
+    }
   }
 }
