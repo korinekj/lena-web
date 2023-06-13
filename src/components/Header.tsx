@@ -11,11 +11,6 @@ import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
 
 function Header() {
-  const toggleLinks = () => {
-    const links = document.querySelectorAll(`.${styles["nav__link"]}`)[0];
-    links.classList.toggle(styles.showLinks);
-  };
-
   const {
     site__header,
     logo,
@@ -26,7 +21,7 @@ function Header() {
     nav__list,
     nav__item,
     nav__link,
-    showLinks,
+    visible,
     phone,
     social_icons,
     showMobile,
@@ -36,6 +31,11 @@ function Header() {
   } = styles;
 
   const { container } = global;
+
+  const toggleLinks = () => {
+    const menu = document.querySelectorAll(`.${nav}`)[0];
+    menu.classList.toggle(`${visible}`);
+  };
 
   return (
     <header className={site__header}>

@@ -34,6 +34,7 @@
   }
 
   .menu {
+    // Hamburger menu
     .menu_btn__burger,
     .menu_btn__burger::before,
     .menu_btn__burger::after {
@@ -55,6 +56,19 @@
     }
     .menu_btn__burger::after {
       transform: translateY(12px);
+    }
+
+    // Links
+    .nav {
+      display: none;
+
+      .nav__link {
+        color: red;
+      }
+    }
+
+    .nav.visible {
+      display: block;
     }
   }
 }
