@@ -25,16 +25,29 @@
 .mainHeader {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
 
-  .logo {
-    #logo {
-      width: 250px;
-    }
+  .logoResized {
+    width: 100px;
+  }
+
+  #logo {
+    border-style: none;
   }
 
   .menu {
     // Hamburger menu
+    &.center {
+      width: 50%;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row-reverse;
+    }
+
+    .menu_btn {
+      padding: 1rem;
+      margin-top: 1rem;
+    }
     .menu_btn__burger,
     .menu_btn__burger::before,
     .menu_btn__burger::after {
@@ -61,6 +74,13 @@
     // Links
     .nav {
       display: none;
+      height: 0;
+      position: absolute;
+      text-align: center;
+
+      .nav__item {
+        padding: 0.5rem 0;
+      }
 
       .nav__link {
         color: red;
@@ -69,6 +89,9 @@
 
     .nav.visible {
       display: block;
+      position: relative;
+      height: auto;
+      transform: translateX(-50%);
     }
   }
 }

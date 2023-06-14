@@ -14,6 +14,7 @@ function Header() {
   const {
     site__header,
     logo,
+    logoResized,
     menu,
     menu_btn,
     menu_btn__burger,
@@ -28,13 +29,19 @@ function Header() {
     mainHeader,
     muiFacebook,
     muiInstagram,
+    center,
   } = styles;
 
   const { container } = global;
 
   const toggleLinks = () => {
-    const menu = document.querySelectorAll(`.${nav}`)[0];
-    menu.classList.toggle(`${visible}`);
+    const navEl = document.querySelectorAll(`.${nav}`)[0];
+    const logoImg = document.getElementById(`${logo}`);
+    const menuC = document.querySelector(`.${menu}`);
+
+    navEl.classList.toggle(`${visible}`);
+    logoImg?.classList.toggle(`${logoResized}`);
+    menuC?.classList.toggle(`${center}`);
   };
 
   return (
