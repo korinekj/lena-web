@@ -19,6 +19,8 @@ function HeroImage() {
               Objednej si zde
             </button>
           </Link>
+
+          <h2>Dezerty od Léni</h2>
         </div>
       </div>
     </section>

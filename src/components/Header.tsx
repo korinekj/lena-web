@@ -52,8 +52,12 @@ function Header() {
           <p>+420 111 111 111</p>
         </div>
         <div className={social_icons}>
-          <FacebookIcon className={muiFacebook} />
-          <InstagramIcon className={muiInstagram} />
+          <a href='https://www.facebook.com/lenka.brynova' target='_blank'>
+            <FacebookIcon className={muiFacebook} />
+          </a>
+          <a href='https://www.instagram.com/lena.korinkova/' target='_blank'>
+            <InstagramIcon className={muiInstagram} />
+          </a>
         </div>
       </section>
 
