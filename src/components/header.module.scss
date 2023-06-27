@@ -45,7 +45,7 @@
     }
 
     .menu_btn {
-      padding: 1rem;
+      padding: 1rem 0;
     }
     .menu_btn__burger,
     .menu_btn__burger::before,
@@ -91,6 +91,53 @@
       position: relative;
       height: auto;
       transform: translateX(-50%);
+    }
+  }
+}
+
+//******** MEDIA QUERIES *********//
+
+// 700px breakpoint
+@media (min-width: 700px) {
+  .showMobile {
+    justify-content: flex-end;
+
+    .phone {
+      display: none;
+    }
+  }
+
+  .mainHeader {
+    align-items: normal;
+    gap: 1rem;
+
+    .logo {
+      width: 100%;
+    }
+    .menu {
+      width: 100%;
+
+      &.center {
+        width: 100%;
+        display: block;
+      }
+      .menu_btn {
+        display: none;
+      }
+
+      .nav {
+        display: block;
+        position: relative;
+
+        .nav__list {
+          display: flex;
+          justify-content: space-between;
+          gap: 1rem;
+        }
+      }
+      .nav.visible {
+        transform: none;
+      }
     }
   }
 }

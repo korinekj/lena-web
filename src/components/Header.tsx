@@ -62,9 +62,11 @@ function Header() {
       </section>
 
       <section className={`${container} ${mainHeader}`}>
-        <Link className={logo} to='/'>
-          <img src={Logo} alt='logo' id={logo} />
-        </Link>
+        <div className={logo}>
+          <Link className={logo} to='/'>
+            <img src={Logo} alt='logo' id={logo} />
+          </Link>
+        </div>
 
         <div className={menu}>
           <div className={menu_btn} onClick={toggleLinks}>
