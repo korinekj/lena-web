@@ -4,4 +4,48 @@
   justify-content: center;
   align-items: center;
   text-align: center;
+  padding: 1em 0;
+
+  h4 {
+    margin: 0 0 0.5em;
+  }
+
+  p {
+    max-width: 300px;
+  }
+
+  img {
+    width: 150px;
+  }
+
+  .nav__item {
+    padding: 0.5em 0;
+    p {
+      margin: 0.2em 0;
+    }
+  }
+}
+
+//******** MEDIA QUERIES *********//
+
+// 700px breakpoint
+@media (min-width: 700px) {
+  .footer__wrap {
+    display: flex;
+    align-items: flex-start;
+
+    .col {
+      width: 100%;
+
+      .nav__item {
+        display: flex;
+        gap: 8px;
+        margin: 0.5em 0;
+      }
+    }
+
+    .web__logo {
+      align-self: center;
+    }
+  }
 }
