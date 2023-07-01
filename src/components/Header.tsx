@@ -30,6 +30,7 @@ function Header() {
     muiFacebook,
     muiInstagram,
     center,
+    desktop_only,
   } = styles;
 
   const { container } = global;
@@ -51,7 +52,7 @@ function Header() {
           <PhoneIphoneIcon />
           <p>+420 111 111 111</p>
         </div>
-        <div className={social_icons}>
+        <div className={`${social_icons}`}>
           <a href='https://www.facebook.com/lenka.brynova' target='_blank'>
             <FacebookIcon className={muiFacebook} />
           </a>
@@ -108,7 +109,7 @@ function Header() {
           </nav>
         </div>
 
-        <div className={social_icons}>
+        <div className={`${social_icons} ${desktop_only}`}>
           <a href='https://www.facebook.com/lenka.brynova' target='_blank'>
             <FacebookIcon className={muiFacebook} />
           </a>
