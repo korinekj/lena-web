@@ -32,11 +32,12 @@
   }
 
   #logo {
-    border-style: none;
+    max-width: 100px;
   }
 
   .menu {
     // Hamburger menu
+    padding-top: 2em;
     &.center {
       width: 50%;
       display: flex;
@@ -79,10 +80,6 @@
 
       .nav__item {
         padding: 0.5rem 0;
-      }
-
-      .nav__link {
-        color: red;
       }
     }
 
