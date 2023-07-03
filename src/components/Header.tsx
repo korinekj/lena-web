@@ -46,7 +46,7 @@ function Header() {
   };
 
   return (
-    <header className={site__header}>
+    <header id='top' className={site__header}>
       <section className={`${container} ${showMobile}`}>
         <div className={phone}>
           <PhoneIphoneIcon />
