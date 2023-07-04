@@ -9,7 +9,7 @@ import LocationOnOutlinedIcon from "@mui/icons-material/LocationOnOutlined";
 import ChefIcon from "../assets/images/chef-avatar.png";
 import Logo from "../assets/images/logo.png";
 
-import * as GLOBAL from "../assets/css/global.module.scss";
+import * as global from "../assets/css/global.module.scss";
 import * as styles from "./footer.module.scss";
 
 function Footer() {
@@ -17,13 +17,13 @@ function Footer() {
 
   return (
     <footer className={site__footer}>
-      <div className={GLOBAL.container}>
+      <div className={global.container}>
         <div className={col}>
           <h4>Kdo jsem</h4>
           <img src={ChefIcon} alt='' className={chef} />
           <p>
-            Vaše speciální událost si zaslouží speciální dort. Dejte mi vědět a
-            já Vám připravím unikátní a lahodný dort na míru
+            Jsem nadšená pekařka, která ve svém volném čase zbožňuje tvořit a
+            péct dorty a další lahodné dobroty.
           </p>
         </div>
 
@@ -39,7 +39,7 @@ function Footer() {
             <ul className={nav__list}>
               <li className={nav__item}>
                 <FavoriteBorderIcon />
-                <p>Název cukrářství</p>
+                <p>Dezerty od Léni</p>
               </li>
               <li className={nav__item}>
                 <PhoneIphoneIcon />

@@ -25,10 +25,16 @@ a {
 
 ul {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .container {
   width: 80%;
   margin: 0 auto;
   max-width: 1100px;
+}
+
+.dortyWrap {
+  text-align: center;
 }

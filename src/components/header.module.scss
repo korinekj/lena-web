@@ -1,0 +1,143 @@
+.showMobile {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .phone {
+    display: flex;
+    align-items: center;
+  }
+
+  .social_icons {
+    display: flex;
+    align-items: center;
+
+    .muiFacebook {
+      color: #3b5998;
+    }
+
+    .muiInstagram {
+      color: #c32aa3;
+    }
+  }
+}
+
+.mainHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  .logoResized {
+    width: 100px;
+  }
+
+  #logo {
+    border-style: none;
+  }
+
+  .menu {
+    // Hamburger menu
+    &.center {
+      width: 50%;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row-reverse;
+    }
+
+    .menu_btn {
+      padding: 1rem 0;
+    }
+    .menu_btn__burger,
+    .menu_btn__burger::before,
+    .menu_btn__burger::after {
+      background-color: black;
+      width: 2em;
+      border-radius: 6px;
+      height: 6px;
+      transition: all 0.5s ease-in-out;
+    }
+
+    .menu_btn__burger::before,
+    .menu_btn__burger::after {
+      position: absolute;
+      content: "";
+    }
+
+    .menu_btn__burger::before {
+      transform: translateY(-12px);
+    }
+    .menu_btn__burger::after {
+      transform: translateY(12px);
+    }
+
+    // Links
+    .nav {
+      display: none;
+      height: 0;
+      position: absolute;
+      text-align: center;
+
+      .nav__item {
+        padding: 0.5rem 0;
+      }
+
+      .nav__link {
+        color: red;
+      }
+    }
+
+    .nav.visible {
+      display: block;
+      position: relative;
+      height: auto;
+      transform: translateX(-50%);
+    }
+  }
+}
+
+//******** MEDIA QUERIES *********//
+
+// 700px breakpoint
+@media (min-width: 700px) {
+  .showMobile {
+    justify-content: flex-end;
+
+    .phone {
+      display: none;
+    }
+  }
+
+  .mainHeader {
+    align-items: normal;
+    gap: 1rem;
+
+    .logo {
+      width: 100%;
+    }
+    .menu {
+      width: 100%;
+
+      &.center {
+        width: 100%;
+        display: block;
+      }
+      .menu_btn {
+        display: none;
+      }
+
+      .nav {
+        display: block;
+        position: relative;
+
+        .nav__list {
+          display: flex;
+          justify-content: space-between;
+          gap: 1rem;
+        }
+      }
+      .nav.visible {
+        transform: none;
+      }
+    }
+  }
+}

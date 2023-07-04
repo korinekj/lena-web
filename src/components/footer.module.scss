@@ -1,49 +1,7 @@
-// .footer {
-//   width: 80vw;
-//   margin: 0 auto;
-
-//   .container {
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-
-//     .container-column {
-//       flex: 1;
-//       display: flex;
-//       justify-content: center;
-//       align-items: center;
-//       flex-direction: column;
-//     }
-
-//     .about {
-//       img.chef {
-//         height: 4rem;
-//       }
-
-//       p {
-//         width: 50%;
-//       }
-//     }
-
-//     .logo {
-//       #logo {
-//         width: 175px;
-//         height: auto;
-//       }
-//     }
-
-//     .contact {
-//       ul {
-//         list-style-type: none;
-//         margin: 0;
-//         padding: 0;
-
-//         li {
-//           display: flex;
-//           align-items: center;
-//           gap: 1rem;
-//         }
-//       }
-//     }
-//   }
-// }
+.col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}

@@ -3,18 +3,18 @@ import { Link } from "gatsby";
 
 import Logo from "../assets/images/logo.png";
 
-import * as GLOBAL from "../assets/css/global.module.scss";
+import * as global from "../assets/css/global.module.scss";
 import * as styles from "./header.module.scss";
 
-function Header() {
-  const toggleLinks = () => {
-    const links = document.querySelectorAll(`.${styles["nav__link"]}`)[0];
-    links.classList.toggle(styles.showLinks);
-  };
+import PhoneIphoneIcon from "@mui/icons-material/PhoneIphone";
+import FacebookIcon from "@mui/icons-material/Facebook";
+import InstagramIcon from "@mui/icons-material/Instagram";
 
+function Header() {
   const {
     site__header,
     logo,
+    logoResized,
     menu,
     menu_btn,
     menu_btn__burger,
@@ -22,16 +22,51 @@ function Header() {
     nav__list,
     nav__item,
     nav__link,
-    showLinks,
+    visible,
+    phone,
     social_icons,
+    showMobile,
+    mainHeader,
+    muiFacebook,
+    muiInstagram,
+    center,
   } = styles;
+
+  const { container } = global;
+
+  const toggleLinks = () => {
+    const navEl = document.querySelectorAll(`.${nav}`)[0];
+    const logoImg = document.getElementById(`${logo}`);
+    const menuC = document.querySelector(`.${menu}`);
+
+    navEl.classList.toggle(`${visible}`);
+    logoImg?.classList.toggle(`${logoResized}`);
+    menuC?.classList.toggle(`${center}`);
+  };
 
   return (
     <header className={site__header}>
-      <div className={GLOBAL.container}>
-        <Link className={logo} to='/'>
-          <img src={Logo} alt='logo' id={styles.logo} />
-        </Link>
+      <section className={`${container} ${showMobile}`}>
+        <div className={phone}>
+          <PhoneIphoneIcon />
+          <p>+420 111 111 111</p>
+        </div>
+        <div className={social_icons}>
+          <a href='https://www.facebook.com/lenka.brynova' target='_blank'>
+            <FacebookIcon className={muiFacebook} />
+          </a>
+          <a href='https://www.instagram.com/lena.korinkova/' target='_blank'>
+            <InstagramIcon className={muiInstagram} />
+          </a>
+        </div>
+      </section>
+
+      <section className={`${container} ${mainHeader}`}>
+        <div className={logo}>
+          <Link className={logo} to='/'>
+            <img src={Logo} alt='logo' id={logo} />
+          </Link>
+        </div>
 
         <div className={menu}>
           <div className={menu_btn} onClick={toggleLinks}>
@@ -71,12 +106,8 @@ function Header() {
               </li>
             </ul>
           </nav>
-          <div className={social_icons}>
-            <a href='#'>facebook</a>
-            <a href='#'>instagram</a>
-          </div>
         </div>
-      </div>
+      </section>
     </header>
   );
 }
