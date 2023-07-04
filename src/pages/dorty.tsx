@@ -4,9 +4,14 @@ import Layout from "../components/Layout";
 import DortyGallery from "../components/DortyGallery";
 
 import * as global from "../assets/css/global.module.scss";
+import * as styles from "../pages/dorty.module.scss";
+
+import ArrowCircleUpIcon from "@mui/icons-material/ArrowCircleUp";
 
 function Dorty() {
   const { container, dortyWrap } = global;
+
+  const { jumpToTop, jumpToTopIcon } = styles;
 
   // setTimeout(() => {
   //   document.getElementById("jumpToTop")?.addEventListener("click", (event) => {
@@ -24,12 +29,12 @@ function Dorty() {
     };
 
     document
-      .getElementById("jumpToTop")
+      .getElementById(`${jumpToTop}`)
       ?.addEventListener("click", handleClick);
 
     return () => {
       document
-        .getElementById("jumpToTop")
+        .getElementById(`${jumpToTop}`)
         ?.removeEventListener("click", handleClick);
       console.log("Cleanup executed");
     };
@@ -41,8 +46,10 @@ function Dorty() {
         <div className={container}>
           <h1>Stránka dorty</h1>
           <DortyGallery />
-          <a href='#' id='jumpToTop'>
-            jump to top
+          <a href='#' id={jumpToTop}>
+            <ArrowCircleUpIcon fontSize='large' className={jumpToTopIcon} />{" "}
+            <br />
+            Posunout nahoru
           </a>
         </div>
       </section>
