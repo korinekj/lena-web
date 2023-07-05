@@ -6,10 +6,6 @@
   color: #c32aa3;
 }
 
-.social_icons {
-  display: none;
-}
-
 ///////////////
 
 .showMobile {
@@ -96,28 +92,21 @@
       transform: translateX(-50%);
     }
   }
+
+  .desktop_only {
+    display: none;
+  }
 }
 
 //******** MEDIA QUERIES *********//
 
 // 700px breakpoint
 @media (min-width: 700px) {
-  .social_icons {
-    display: flex;
-    align-items: center;
-  }
-
   .showMobile {
-    justify-content: flex-end;
-
-    .phone,
-    .social_icons {
-      display: none;
-    }
+    display: none;
   }
 
   .mainHeader {
-    align-items: normal;
     gap: 1rem;
 
     .logo {
@@ -148,6 +137,11 @@
       .nav.visible {
         transform: none;
       }
+    }
+
+    .desktop_only {
+      display: flex;
+      align-self: center;
     }
   }
 }
