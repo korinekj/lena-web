@@ -13,11 +13,21 @@ import * as global from "../assets/css/global.module.scss";
 import * as styles from "./footer.module.scss";
 
 function Footer() {
-  const { site__footer, col, chef, logo, nav, nav__list, nav__item } = styles;
+  const {
+    site__footer,
+    col,
+    chef,
+    logo,
+    web__logo,
+    nav,
+    nav__list,
+    nav__item,
+    footer__wrap,
+  } = styles;
 
   return (
     <footer className={site__footer}>
-      <div className={global.container}>
+      <div className={`${global.container} ${footer__wrap}`}>
         <div className={col}>
           <h4>Kdo jsem</h4>
           <img src={ChefIcon} alt='' className={chef} />
@@ -27,9 +37,9 @@ function Footer() {
           </p>
         </div>
 
-        <div className={col}>
+        <div className={`${col} ${web__logo}`}>
           <Link to='/'>
-            <img src={Logo} alt='logo' id={logo} />
+            <img src={Logo} alt='logo' id={undefined} />
           </Link>
         </div>
 

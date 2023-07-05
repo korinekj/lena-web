@@ -107,6 +107,15 @@ function Header() {
             </ul>
           </nav>
         </div>
+
+        <div className={social_icons}>
+          <a href='https://www.facebook.com/lenka.brynova' target='_blank'>
+            <FacebookIcon className={muiFacebook} />
+          </a>
+          <a href='https://www.instagram.com/lena.korinkova/' target='_blank'>
+            <InstagramIcon className={muiInstagram} />
+          </a>
+        </div>
       </section>
     </header>
   );

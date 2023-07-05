@@ -1,3 +1,17 @@
+.muiFacebook {
+  color: #3b5998;
+}
+
+.muiInstagram {
+  color: #c32aa3;
+}
+
+.social_icons {
+  display: none;
+}
+
+///////////////
+
 .showMobile {
   display: flex;
   align-items: center;
@@ -11,14 +25,6 @@
   .social_icons {
     display: flex;
     align-items: center;
-
-    .muiFacebook {
-      color: #3b5998;
-    }
-
-    .muiInstagram {
-      color: #c32aa3;
-    }
   }
 }
 
@@ -32,11 +38,12 @@
   }
 
   #logo {
-    border-style: none;
+    max-width: 100px;
   }
 
   .menu {
     // Hamburger menu
+
     &.center {
       width: 50%;
       display: flex;
@@ -80,10 +87,6 @@
       .nav__item {
         padding: 0.5rem 0;
       }
-
-      .nav__link {
-        color: red;
-      }
     }
 
     .nav.visible {
@@ -99,10 +102,16 @@
 
 // 700px breakpoint
 @media (min-width: 700px) {
+  .social_icons {
+    display: flex;
+    align-items: center;
+  }
+
   .showMobile {
     justify-content: flex-end;
 
-    .phone {
+    .phone,
+    .social_icons {
       display: none;
     }
   }
@@ -116,6 +125,7 @@
     }
     .menu {
       width: 100%;
+      padding-top: 2em;
 
       &.center {
         width: 100%;
