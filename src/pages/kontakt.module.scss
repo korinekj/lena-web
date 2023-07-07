@@ -17,3 +17,30 @@
     transform: translateY(100%);
   }
 }
+
+#contactForm {
+  h2 {
+    text-align: center;
+  }
+  form {
+    max-width: 80%;
+    margin: 0 auto;
+
+    .formRow {
+      margin-bottom: 0.5em;
+    }
+
+    label {
+      display: block;
+      padding: 0.35em 0;
+    }
+
+    input[type="text"],
+    input[type="submit"],
+    input[type="email"],
+    textarea {
+      width: 100%;
+      box-sizing: border-box;
+    }
+  }
+}

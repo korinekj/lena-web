@@ -3,11 +3,11 @@ import GoogleMap from "../components/GoogleMap";
 import Layout from "../components/Layout";
 
 import * as global from "../assets/css/global.module.scss";
-import * as styles from "../pages/kontakty.module.scss";
+import * as styles from "../pages/kontakt.module.scss";
 
 export default function Kontakt() {
   const { container } = global;
-  const { kontaktHeroImg, headline } = styles;
+  const { kontaktHeroImg, headline, contactForm, formRow } = styles;
 
   return (
     <Layout>
@@ -18,10 +18,32 @@ export default function Kontakt() {
           </div>
         </section>
         <div className={container}>
-          <section>
+          <section id={contactForm}>
             <h2>Kontaktujte mě</h2>
+            <form>
+              <div className={formRow}>
+                <label htmlFor='fname'>Jméno</label>
+                <input type='text' id='fname' required />
+              </div>
+
+              <div className={formRow}>
+                <label htmlFor='lname'>Příjmení</label>
+                <input type='text' id='lname' required />
+              </div>
+
+              <div className={formRow}>
+                <label htmlFor='email'>Email</label>
+                <input type='email' id='email' required />
+              </div>
+
+              <div className={formRow}>
+                <label htmlFor='message'>Vaše zpráva</label>
+                <textarea id='message' rows={10} required></textarea>
+              </div>
+
+              <input type='submit' />
+            </form>
           </section>
-          <section>ZDE IMPLEMENTOVAT NĚJAKÝ KONTAKTNÍ FORMULÁŘ</section>
           <GoogleMap />
         </div>
       </section>
