@@ -41,7 +41,7 @@ export default function Kontakt() {
                 <textarea id='message' rows={10} required></textarea>
               </div>
 
-              <input type='submit' />
+              <button type='submit'>Odeslat</button>
             </form>
           </section>
           <GoogleMap />
