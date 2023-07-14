@@ -4,25 +4,36 @@ import Layout from "../components/Layout";
 
 import * as global from "../assets/css/global.module.scss";
 import * as styles from "../pages/kontakt.module.scss";
-import { Link } from "gatsby";
 
-import test from "../assets/images/dorty/image00001.jpeg";
+import img1 from "../assets/images/dorty/image00062.jpeg";
+import img2 from "../assets/images/dorty/image00065.jpeg";
+import img3 from "../assets/images/dorty/image00053.jpeg";
+import img4 from "../assets/images/dorty/image00059.jpeg";
+import img5 from "../assets/images/dorty/image00055.jpeg";
+import img6 from "../assets/images/dorty/image00047.jpeg";
 
 //import Test from "../components/Test";
 
 export default function Kontakt() {
   const { container } = global;
-  const { kontaktHeroImg, headline, contactForm, formRow, wrapper, cake } =
-    styles;
+  const {
+    kontaktHeroImg,
+    headline,
+    contactForm,
+    formRow,
+    wrapper,
+    cake,
+    heading,
+  } = styles;
 
-  const images = [
-    "image00062.jpeg",
-    "image00065.jpeg",
-    "image00053.jpeg",
-    "image00059.jpeg",
-    "image00055.jpeg",
-    "image00047.jpeg",
-  ];
+  // const images = [
+  //   "image00062.jpeg",
+  //   "image00065.jpeg",
+  //   "image00053.jpeg",
+  //   "image00059.jpeg",
+  //   "image00055.jpeg",
+  //   "image00047.jpeg",
+  // ];
 
   return (
     <Layout>
@@ -34,7 +45,7 @@ export default function Kontakt() {
           </div>
         </section>
         <div className={container}>
-          <h2>Kontaktujte mě</h2>
+          <h2 className={heading}>Kontaktujte mě</h2>
 
           <div className={wrapper}>
             <section id={contactForm}>
@@ -59,7 +70,7 @@ export default function Kontakt() {
               </form>
             </section>
             <section id={cake}>
-              {images.map((image, index) => (
+              {/* {images.map((image, index) => (
                 <a href={test} data-lightbox='dort' data-title={image}>
                   <img
                     src={require(`../assets/images/dorty/${image}`).default}
@@ -67,7 +78,37 @@ export default function Kontakt() {
                     key={index}
                   />
                 </a>
-              ))}
+              ))} */}
+              <figure>
+                <a href={img1} data-lightbox='dort' data-title={img1}>
+                  <img src={img1} alt={img1} />
+                </a>
+              </figure>
+              <figure>
+                <a href={img2} data-lightbox='dort' data-title={img2}>
+                  <img src={img2} alt={img2} />
+                </a>
+              </figure>
+              <figure>
+                <a href={img3} data-lightbox='dort' data-title={img3}>
+                  <img src={img3} alt={img3} />
+                </a>
+              </figure>
+              <figure>
+                <a href={img4} data-lightbox='dort' data-title={img4}>
+                  <img src={img4} alt={img4} />
+                </a>
+              </figure>
+              <figure>
+                <a href={img5} data-lightbox='dort' data-title={img5}>
+                  <img src={img5} alt={img5} />
+                </a>
+              </figure>
+              <figure>
+                <a href={img6} data-lightbox='dort' data-title={img6}>
+                  <img src={img6} alt={img6} />
+                </a>
+              </figure>
             </section>
           </div>
           <GoogleMap />

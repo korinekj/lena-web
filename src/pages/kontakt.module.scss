@@ -1,3 +1,7 @@
+.heading {
+  text-align: center;
+}
+
 #kontaktHeroImg {
   background-image: url("../assets/images/kontakty-hero.jpg");
   padding: 50px 0;
@@ -20,6 +24,10 @@
 
 #cake {
   column-count: 3;
+
+  figure {
+    margin: 0;
+  }
 }
 
 #contactForm {
@@ -74,6 +82,22 @@
       padding: 0.375em 0.75em;
       text-transform: capitalize;
       transition: 0.3s ease-in-out all;
+    }
+  }
+}
+
+//******** MEDIA QUERIES *********//
+
+@media (min-width: 950px) {
+  .wrapper {
+    display: flex;
+
+    section {
+      width: 100%;
+    }
+
+    #cake {
+      column-count: 2;
     }
   }
 }
