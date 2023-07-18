@@ -111,8 +111,8 @@ export default function Kontakt() {
               </figure>
             </section>
           </div>
-          <GoogleMap />
         </div>
+        <GoogleMap />
       </section>
     </Layout>
   );

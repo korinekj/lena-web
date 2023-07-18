@@ -92,12 +92,15 @@
   .wrapper {
     display: flex;
 
+    gap: 20px;
+    align-items: flex-start;
+
     section {
       width: 100%;
     }
 
     #cake {
-      column-count: 2;
+      margin: 3em 0;
     }
   }
 }
