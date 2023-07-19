@@ -49,22 +49,30 @@ export default function Kontakt() {
 
           <div className={wrapper}>
             <section id={contactForm}>
-              <form>
+              <form
+                action='https://formsubmit.co/7c001bac3a554503f9ba4b35ae1fdf77'
+                method='POST'
+              >
                 <div className={formRow}>
                   <label htmlFor='fname'>Jméno</label>
-                  <input type='text' id='fname' required />
+                  <input type='text' id='fname' name='jméno' required />
                 </div>
                 <div className={formRow}>
                   <label htmlFor='lname'>Příjmení</label>
-                  <input type='text' id='lname' required />
+                  <input type='text' id='lname' name='příjmení' required />
                 </div>
                 <div className={formRow}>
                   <label htmlFor='email'>Email</label>
-                  <input type='email' id='email' required />
+                  <input type='email' id='email' name='email' required />
                 </div>
                 <div className={formRow}>
-                  <label htmlFor='message'>Vaše zpráva</label>
-                  <textarea id='message' rows={10} required></textarea>
+                  <label htmlFor='zpráva'>Vaše zpráva</label>
+                  <textarea
+                    id='message'
+                    rows={10}
+                    name='message'
+                    required
+                  ></textarea>
                 </div>
                 <button type='submit'>Odeslat</button>
               </form>
