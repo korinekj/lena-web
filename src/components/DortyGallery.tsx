@@ -36,16 +36,19 @@ function DortyGallery() {
   // Rendering a gallery section
   return (
     <section className={imgGallery}>
-      {nodes.map(({ id, publicURL, childImageSharp, base }) => (
-        <article key={id} className={img}>
-          <a href={publicURL} data-lightbox='dorty' data-title={base}>
-            <GatsbyImage
-              image={childImageSharp.gatsbyImageData}
-              alt={`${base} image`}
-            />
-          </a>
-        </article>
-      ))}
+      {nodes.map(({ id, publicURL, childImageSharp, base }) => {
+        console.log(publicURL);
+        return (
+          <article key={id} className={img}>
+            <a href={publicURL} data-lightbox='dorty' data-title={base}>
+              <GatsbyImage
+                image={childImageSharp.gatsbyImageData}
+                alt={`${base} image`}
+              />
+            </a>
+          </article>
+        );
+      })}
     </section>
   );
 }
