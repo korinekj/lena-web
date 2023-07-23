@@ -90,7 +90,7 @@ function ImageSlider({ children }) {
 
   return (
     <div style={sliderStyles}>
-      <div id='slide' style={slideStyles}>
+      <div style={slideStyles}>
         {children}
         <div style={leftArrowStyles} onClick={previousSlide}>
           ←
