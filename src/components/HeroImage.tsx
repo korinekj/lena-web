@@ -7,7 +7,7 @@ import * as styles from "./heroImage.module.scss";
 import ImageSlider from "./ImageSlider";
 
 function HeroImage() {
-  const { heroImage, heroText, hero, containerStyles } = styles;
+  const { heroImage, heroText, hero } = styles;
 
   return (
     <section className={hero}>

@@ -37,7 +37,6 @@ function DortyGallery() {
   return (
     <section className={imgGallery}>
       {nodes.map(({ id, publicURL, childImageSharp, base }) => {
-        console.log(publicURL);
         return (
           <article key={id} className={img}>
             <a href={publicURL} data-lightbox='dorty' data-title={base}>

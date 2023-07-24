@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 
-import slide1 from "../assets/images/hero-slides/slide1.jpg";
-import slide2 from "../assets/images/hero-slides/slide2.jpg";
-import slide3 from "../assets/images/hero-slides/slide3.jpg";
-import slide4 from "../assets/images/hero-slides/slide4.jpg";
+import slide1 from "../assets/images/resized/slide1.jpg";
+import slide2 from "../assets/images/resized/slide2.jpg";
+import slide3 from "../assets/images/resized/slide3.jpg";
+import slide4 from "../assets/images/resized/slide4.jpg";
 
 const images = [
   { url: slide1, title: "Image 1" },
