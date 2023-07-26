@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 import slide1 from "../assets/images/resized/slide1.jpg";
 import slide2 from "../assets/images/resized/slide2.jpg";
@@ -15,6 +15,19 @@ const images = [
 function ImageSlider({ children }) {
   const [currentIndex, setCurrentIndex] = useState(0);
 
+  // Hooks
+  useEffect(() => {
+    const interval = setInterval(() => {
+      nextSlide();
+      console.log(currentIndex);
+    }, 5000);
+
+    return () => {
+      clearInterval(interval);
+    };
+  }, [currentIndex]);
+
+  // Functions
   const previousSlide = () => {
     if (currentIndex === 0) {
       setCurrentIndex(images.length - 1);
@@ -48,6 +61,7 @@ function ImageSlider({ children }) {
     backgroundSize: "cover",
     backgroundPosition: "center",
     backgroundRepeat: "no-repeat",
+    transition: "background-image 0.6s ease-in-out",
   };
 
   const globalArrowStyles = {
@@ -92,12 +106,13 @@ function ImageSlider({ children }) {
     <div style={sliderStyles}>
       <div style={slideStyles}>
         {children}
-        <div style={leftArrowStyles} onClick={previousSlide}>
+        {/* Hide control arrows */}
+        {/* <div style={leftArrowStyles} onClick={previousSlide}>
           ←
         </div>
         <div style={rightArrowStyles} onClick={nextSlide}>
           →
-        </div>
+        </div> */}
       </div>
       <div style={dotsContainerStyles}>
         {images.map((slide, slideIndex) => (
