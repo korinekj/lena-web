@@ -35,6 +35,8 @@ export default function Kontakt() {
   //   "image00047.jpeg",
   // ];
 
+  const url = window.location.origin;
+
   return (
     <Layout>
       {/* <Test /> */}
@@ -75,6 +77,12 @@ export default function Kontakt() {
                   ></textarea>
                 </div>
                 <button type='submit'>Odeslat</button>
+
+                <input
+                  type='hidden'
+                  name='_next'
+                  value='http://localhost:8000/formular-odeslan'
+                ></input>
               </form>
             </section>
             <section id={cake}>
