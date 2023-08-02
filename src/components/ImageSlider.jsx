@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 
+import CircleIcon from "@mui/icons-material/Circle";
+
 import slide1 from "../assets/images/resized/slide1.jpg";
 import slide2 from "../assets/images/resized/slide2.jpg";
 import slide3 from "../assets/images/resized/slide3.jpg";
@@ -87,17 +89,18 @@ function ImageSlider({ children }) {
   const dotsContainerStyles = {
     display: "flex",
     justifyContent: "center",
-    transform: "translateY(-25px)",
+    transform: "translateY(-35px)",
   };
 
   const dotStyles = {
     margin: "0 0.2em",
     cursor: "pointer",
+    color: "white",
   };
 
   const activeDotStyles = {
     ...dotStyles,
-    background: "red",
+    color: "#b34255",
   };
 
   /* END INLINE STYLES */
@@ -121,7 +124,9 @@ function ImageSlider({ children }) {
             key={slideIndex}
             onClick={() => goToSlide(slideIndex)}
           >
-            <span>&#9898;</span>
+            <span>
+              <CircleIcon />
+            </span>
           </div>
         ))}
       </div>
