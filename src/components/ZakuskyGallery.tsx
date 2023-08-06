@@ -1,17 +1,18 @@
 import React from "react";
+
 import { graphql, useStaticQuery } from "gatsby";
 import { GatsbyImage } from "gatsby-plugin-image";
 
-import type { DortyQueryResult } from "../types/types.js";
+import type { ZakuskyQueryResult } from "../types/types";
 
 import * as styles from "./dortyGallery.module.scss";
 
 /**
- * GraphQL query to retrieve images from the "assets/dorty" folder.
+ * GraphQL query to retrieve images from the "assets/zakusky" folder.
  */
 const query = graphql`
-  query DortImage {
-    allFile(filter: { sourceInstanceName: { eq: "dorty" } }) {
+  query ZakuskyQuery {
+    allFile(filter: { sourceInstanceName: { eq: "zakusky" } }) {
       nodes {
         id
         base
@@ -24,22 +25,21 @@ const query = graphql`
   }
 `;
 
-function DortyGallery() {
+function ZakuskyGallery() {
   // Extracting styles using destructuring
   const { imgGallery, img } = styles;
 
   // Retrieving data with the useStaticQuery hook and the GraphQL query defined above
   const {
     allFile: { nodes },
-  } = useStaticQuery<DortyQueryResult>(query);
+  } = useStaticQuery<ZakuskyQueryResult>(query);
 
-  // Rendering a gallery section
   return (
     <section className={imgGallery}>
-      {nodes.map(({ id, publicURL, childImageSharp, base }) => {
+      {nodes.map(({ id, base, publicURL, childImageSharp }) => {
         return (
           <article key={id} className={img}>
-            <a href={publicURL} data-lightbox='dorty' data-title={base}>
+            <a href={publicURL} data-lightbox='zakusky' data-title={base}>
               <GatsbyImage
                 image={childImageSharp.gatsbyImageData}
                 alt={`${base} image`}
@@ -52,4 +52,4 @@ function DortyGallery() {
   );
 }
 
-export default DortyGallery;
+export default ZakuskyGallery;

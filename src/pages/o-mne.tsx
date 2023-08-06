@@ -9,31 +9,40 @@ import img from "../assets/images/dorty/image00058.jpeg";
 function About() {
   const { container } = global;
 
-  const { d_flex, col } = styles;
+  const { about, col } = styles;
 
   return (
     <Layout>
       <section className={undefined}>
         <div className={container}>
-          <h1>Stránka o mě</h1>
-          <div className={d_flex}>
+          <h1>
+            Jmenuji se Lenka{" "}
+            <span>
+              <br /> a jsem vášnivá pekařka
+            </span>
+          </h1>
+          <div className={about}>
             <div className={col}>
               <p>
-                Ahoj, mé jméno je Lenka a pečení dortů je mým koníčkem. Mým
-                cílem je poskytnout zákazníkům dorty, které nejen vynikají
-                chutí, ale také krásně vypadají, a to na různé příležitosti,
-                jako jsou narozeniny, svatby, oslavy a další speciální události.
+                Ve svém volném čase se ráda oddávám tvorbě a pečení dortů a
+                dalších lahodných dobrot. Mé srdce patří krásnému světu pečení,
+                kde se vůně čerstvě upečených dezertů snoubí s radostí z tvorby.
+                Na této sladké cestě se neustále zdokonaluji a hledám nové
+                inspirace, aby mé dezerty přinášely radost a potěšení každému,
+                kdo je ochutná.
               </p>
               <p>
-                Od své babičky jsem se v malém městě [Počátky], kde jsem
-                vyrůstala, naučila vařit a péct. Pečení dortů pro mě znamená
-                vášeň a ráda experimentuji s novými recepty.
+                Mým cílem je poskytnout zákazníkům dorty a jiné pochoutky, které
+                nejen vynikají chutí, ale také krásně vypadají, a to na různé
+                příležitosti, jako jsou narozeniny, svatby, oslavy a další
+                speciální události.
               </p>
               <p>
-                Pokud hledáte někoho, kdo pro Vás vytvoří ten nejkrásnější a
-                nejchutnější dort na Vaší další speciální událost, neváhejte mě
-                kontaktovat. Těším se na spolupráci s Vámi!
+                Děkuji, že jste se zastavili na mé stránce a ráda bych vás
+                pozvala na chuťovou výpravu plnou sladkých pochoutek!
               </p>
+
+              <p>Vaše Lenka - Pekařka srdcem a duší.</p>
             </div>
             <div className={col}>
               <img src={img} />

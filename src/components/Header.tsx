@@ -96,8 +96,8 @@ function Header() {
                 </Link>
               </li>
               <li className={nav__item}>
-                <Link to='/cukrovi' className={nav__link}>
-                  Cukroví
+                <Link to='/zakusky' className={nav__link}>
+                  Zákusky
                 </Link>
               </li>
               <li className={nav__item}>

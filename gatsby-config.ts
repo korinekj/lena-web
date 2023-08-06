@@ -20,5 +20,12 @@ module.exports = {
         path: `${__dirname}/src/assets/images/dorty`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `zakusky`,
+        path: `${__dirname}/src/assets/images/zakusky`,
+      },
+    },
   ],
 };

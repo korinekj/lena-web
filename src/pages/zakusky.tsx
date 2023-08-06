@@ -2,19 +2,21 @@ import React from "react";
 import Layout from "../components/Layout";
 
 import * as global from "../assets/css/global.module.scss";
+import ZakuskyGallery from "../components/ZakuskyGallery";
 
-function Cukrovi() {
+function Zákusky() {
   const { container } = global;
 
   return (
     <Layout>
       <section className={undefined}>
         <div className={container}>
-          <h1>Stránka Cukrovi</h1>
+          <h1>Stránka Zákusky</h1>
+          <ZakuskyGallery />
         </div>
       </section>
     </Layout>
   );
 }
 
-export default Cukrovi;
+export default Zákusky;

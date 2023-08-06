@@ -23,7 +23,7 @@ function HeroImage() {
               </button>
             </Link>
 
-            <h2>Dezerty od Léni</h2>
+            <h2>Mlsání od Léni</h2>
           </div>
         </div>
       </ImageSlider>

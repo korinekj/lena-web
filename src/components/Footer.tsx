@@ -32,8 +32,8 @@ function Footer() {
           <h4>Kdo jsem</h4>
           <img src={ChefIcon} alt='' className={chef} />
           <p>
-            Jsem nadšená pekařka, která ve svém volném čase zbožňuje tvořit a
-            péct dorty a další lahodné dobroty.
+            Jmenuji se Lenka a jsem vášnivá pekařka, která ve svém volném čase
+            zbožňuje tvořit a péct dorty a další lahodné dobroty.
           </p>
         </div>
 
@@ -49,7 +49,7 @@ function Footer() {
             <ul className={nav__list}>
               <li className={nav__item}>
                 <FavoriteBorderIcon />
-                <p>Dezerty od Léni</p>
+                <p>Mlsání od Léni</p>
               </li>
               <li className={nav__item}>
                 <PhoneIphoneIcon />
