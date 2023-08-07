@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "gatsby";
 
 import Logo from "../assets/images/logo.png";
+import Logo1 from "../assets/images/final-logo-removebg-preview.png";
 
 import * as global from "../assets/css/global.module.scss";
 import * as styles from "./header.module.scss";
@@ -65,7 +66,7 @@ function Header() {
       <section className={`${container} ${mainHeader}`}>
         <div className={logo}>
           <Link className={logo} to='/'>
-            <img src={Logo} alt='logo' id={logo} />
+            <img src={Logo1} alt='logo' id={logo} />
           </Link>
         </div>
 

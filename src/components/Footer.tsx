@@ -8,6 +8,7 @@ import LocationOnOutlinedIcon from "@mui/icons-material/LocationOnOutlined";
 
 import ChefIcon from "../assets/images/chef-avatar.png";
 import Logo from "../assets/images/logo.png";
+import Logo1 from "../assets/images/final-logo-removebg-preview.png";
 
 import * as global from "../assets/css/global.module.scss";
 import * as styles from "./footer.module.scss";
@@ -39,7 +40,7 @@ function Footer() {
 
         <div className={`${col} ${web__logo}`}>
           <Link to='/'>
-            <img src={Logo} alt='logo' id={undefined} />
+            <img src={Logo1} alt='logo' id={undefined} />
           </Link>
         </div>
 
