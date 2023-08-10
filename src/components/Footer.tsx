@@ -8,7 +8,7 @@ import LocationOnOutlinedIcon from "@mui/icons-material/LocationOnOutlined";
 
 import ChefIcon from "../assets/images/chef-avatar.png";
 import Logo from "../assets/images/logo.png";
-import Logo1 from "../assets/images/final-logo-removebg-preview.png";
+import Logo1 from "../assets/images/logo-final.png";
 
 import * as global from "../assets/css/global.module.scss";
 import * as styles from "./footer.module.scss";

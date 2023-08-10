@@ -35,6 +35,9 @@
 
   #logo {
     max-width: 100px;
+    position: relative;
+    top: -30px;
+    left: -5px;
   }
 
   .menu {
@@ -111,6 +114,10 @@
 
     .logo {
       width: 100%;
+
+      #logo {
+        top: initial;
+      }
     }
     .menu {
       width: 100%;

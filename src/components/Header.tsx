@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "gatsby";
 
 import Logo from "../assets/images/logo.png";
-import Logo1 from "../assets/images/final-logo-removebg-preview.png";
+import Logo1 from "../assets/images/logo-final.png";
 
 import * as global from "../assets/css/global.module.scss";
 import * as styles from "./header.module.scss";
