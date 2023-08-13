@@ -11,7 +11,10 @@ import * as styles from "./dortyGallery.module.scss";
  */
 const query = graphql`
   query DortImage {
-    allFile(filter: { sourceInstanceName: { eq: "dorty" } }) {
+    allFile(
+      filter: { sourceInstanceName: { eq: "dorty" } }
+      sort: { changeTime: ASC }
+    ) {
       nodes {
         id
         base
