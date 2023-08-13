@@ -23,6 +23,11 @@
   box-shadow: 2px 2px 20px -10px rgba(0, 0, 0, 0.3);
 }
 
+.sluzby:hover {
+  transition-duration: 0.3s;
+  box-shadow: 2px 2px 20px -10px rgba(0, 0, 0, 0.85);
+}
+
 @media (min-width: 700px) {
   .item {
     display: flex;
