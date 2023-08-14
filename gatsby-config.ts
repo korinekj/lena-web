@@ -14,6 +14,14 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     {
+      resolve: "gatsby-plugin-google-fonts",
+      options: {
+        fonts: [
+          "Roboto:400,500,700", // Replace with your selected font and weights
+        ],
+      },
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `dorty`,
