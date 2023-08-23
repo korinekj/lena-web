@@ -54,10 +54,10 @@ function Header() {
           <p>+420 111 111 111</p>
         </div>
         <div className={`${social_icons}`}>
-          <a href='https://www.facebook.com/lenka.brynova' target='_blank'>
+          <a href='https://m.me/lenka.brynova' target='_blank'>
             <FacebookIcon className={muiFacebook} />
           </a>
-          <a href='https://www.instagram.com/lena.korinkova/' target='_blank'>
+          <a href='https://www.instagram.com/direct/t/104498714284832' target='_blank'>
             <InstagramIcon className={muiInstagram} />
           </a>
         </div>
@@ -111,10 +111,10 @@ function Header() {
         </div>
 
         <div className={`${social_icons} ${desktop_only}`}>
-          <a href='https://www.facebook.com/lenka.brynova' target='_blank'>
+          <a href='https://m.me/lenka.brynova' target='_blank'>
             <FacebookIcon className={muiFacebook} />
           </a>
-          <a href='https://www.instagram.com/lena.korinkova/' target='_blank'>
+          <a href='https://www.instagram.com/direct/t/104498714284832' target='_blank'>
             <InstagramIcon className={muiInstagram} />
           </a>
         </div>
