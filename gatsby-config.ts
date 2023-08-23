@@ -25,7 +25,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `dorty`,
-        path: `${__dirname}/src/assets/images/dorty`,
+        path: `${__dirname}/src/assets/images/dorty/resized/compressed`,
       },
     },
     {
