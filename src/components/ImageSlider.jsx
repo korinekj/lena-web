@@ -21,7 +21,6 @@ function ImageSlider({ children }) {
   useEffect(() => {
     const interval = setInterval(() => {
       nextSlide();
-      console.log(currentIndex);
     }, 5000);
 
     return () => {

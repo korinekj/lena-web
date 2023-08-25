@@ -5,8 +5,8 @@ import * as styles from "./nabidka.module.scss";
 
 import { Link } from "gatsby";
 
-import Zakusek from "../assets/images/zakusek.jpg";
-import Dort from "../assets/images/dort2.jpg";
+import Zakusek from "../assets/images/nabidka/zakusek.jpg";
+import Dort from "../assets/images/nabidka/dort2.jpg";
 
 function Nabidka() {
   const { container } = global;
