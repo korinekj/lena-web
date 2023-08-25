@@ -32,7 +32,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `zakusky`,
-        path: `${__dirname}/src/assets/images/zakusky`,
+        path: `${__dirname}/src/assets/images/zakusky/resized/compressed`,
       },
     },
   ],
