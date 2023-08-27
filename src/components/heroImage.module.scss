@@ -30,6 +30,7 @@
       margin-bottom: 6rem;
 
       span {
+        padding-top: 0.3em;
         display: block;
         font-size: 2rem;
         font-weight: 300;
@@ -47,19 +48,23 @@
       font-weight: 500;
     }
 
+    a:hover {
+      opacity: 1;
+    }
+
     button {
       font-size: 1.4rem;
 
       color: #fff;
-      background-color: #a9000e;
-      padding: 0.7rem 1rem;
+      background-color: #e0004b;
+      padding: 0.8em 1.2em;
       border: none;
       border-radius: 0.5rem;
       transition: all 0.4s ease-in-out;
-      text-transform: uppercase;
 
       &:hover {
-        background-color: #84000b;
+        background-color: #ca0043;
+
         cursor: pointer;
       }
     }

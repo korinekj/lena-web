@@ -14,16 +14,16 @@ function HeroImage() {
       <ImageSlider>
         <div className={heroImage}>
           <div className={heroText}>
+            <h2>Mlsání od Léni</h2>
             <h1>
               Zakázkové pečení<span>dortů a zákusků</span>
             </h1>
+
             <Link to='/kontakt'>
               <button type='button' role='link'>
-                Objednej si zde
+                Kontaktujte mě
               </button>
             </Link>
-
-            <h2>Mlsání od Léni</h2>
           </div>
         </div>
       </ImageSlider>

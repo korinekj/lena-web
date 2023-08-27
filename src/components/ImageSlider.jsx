@@ -99,7 +99,7 @@ function ImageSlider({ children }) {
 
   const activeDotStyles = {
     ...dotStyles,
-    color: "#b34255",
+    color: "#e0004b",
   };
 
   /* END INLINE STYLES */
