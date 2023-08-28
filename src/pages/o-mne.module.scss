@@ -1,14 +1,13 @@
+.about {
+  img {
+    border-radius: 180px 090px 0150px 025px;
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5);
+  }
+}
+
 @media (min-width: 700px) {
   .about {
     display: flex;
     justify-content: space-between;
-
-    .col {
-      flex-basis: 50%;
-    }
-
-    .aboutImg {
-      text-align: center;
-    }
   }
 }

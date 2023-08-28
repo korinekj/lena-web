@@ -5,6 +5,8 @@ import * as global from "../assets/css/global.module.scss";
 import * as styles from "../pages/o-mne.module.scss";
 
 import img from "../assets/images/dorty/image00058.jpeg";
+import img1 from "../assets/images/o-mne/resized/compressed/image00002.jpeg";
+import img2 from "../assets/images/o-mne/resized/compressed/image00004.jpeg";
 
 function About() {
   const { container } = global;
@@ -16,7 +18,7 @@ function About() {
       <section className={undefined}>
         <div className={container}>
           <h1>
-            Jmenuji se Lenka{" "}
+            Jmenuji se Lenka
             <span>
               <br /> a jsem vášnivá pekařka
             </span>
@@ -45,7 +47,9 @@ function About() {
               <p>Vaše Lenka - Pekařka srdcem a duší.</p>
             </div>
             <div className={col}>
-              <img src={img} />
+              {/* <img src={img} /> */}
+              <img src={img1} />
+              {/* <img src={img2} /> */}
             </div>
           </div>
         </div>
