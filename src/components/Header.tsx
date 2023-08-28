@@ -51,13 +51,16 @@ function Header() {
       <section className={`${container} ${showMobile}`}>
         <div className={phone}>
           <PhoneIphoneIcon />
-          <p>+420 111 111 111</p>
+          <p>+420 731 774 585</p>
         </div>
         <div className={`${social_icons}`}>
           <a href='https://m.me/lenka.brynova' target='_blank'>
             <FacebookIcon className={muiFacebook} />
           </a>
-          <a href='https://www.instagram.com/direct/t/104498714284832' target='_blank'>
+          <a
+            href='https://www.instagram.com/direct/t/104498714284832'
+            target='_blank'
+          >
             <InstagramIcon className={muiInstagram} />
           </a>
         </div>
@@ -114,7 +117,10 @@ function Header() {
           <a href='https://m.me/lenka.brynova' target='_blank'>
             <FacebookIcon className={muiFacebook} />
           </a>
-          <a href='https://www.instagram.com/direct/t/104498714284832' target='_blank'>
+          <a
+            href='https://www.instagram.com/direct/t/104498714284832'
+            target='_blank'
+          >
             <InstagramIcon className={muiInstagram} />
           </a>
         </div>

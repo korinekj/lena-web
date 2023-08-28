@@ -24,6 +24,7 @@ function Footer() {
     nav__list,
     nav__item,
     footer__wrap,
+    ulice,
   } = styles;
 
   return (
@@ -54,15 +55,18 @@ function Footer() {
               </li>
               <li className={nav__item}>
                 <PhoneIphoneIcon />
-                <p>Telefon číslo</p>
+                <p>+420 731 774 585</p>
               </li>
               <li className={nav__item}>
                 <EmailOutlinedIcon />
-                <p>Email</p>
+                <p>korinkovalen@email.cz</p>
               </li>
               <li className={nav__item}>
                 <LocationOnOutlinedIcon />
-                <p>Adresa</p>
+                <div>
+                  <p className={ulice}>Žižkova 376</p>
+                  <p>394 68 Žirovnice</p>
+                </div>
               </li>
             </ul>
           </nav>

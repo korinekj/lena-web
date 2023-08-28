@@ -16,6 +16,10 @@
   .phone {
     display: flex;
     align-items: center;
+
+    p {
+      font-weight: 500;
+    }
   }
 
   .social_icons {
