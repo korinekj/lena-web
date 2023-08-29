@@ -22,9 +22,14 @@ h4 {
   @extend .global-heading;
 }
 
+h4 {
+  font-size: 1.25rem;
+}
+
 p {
   color: #333333;
   line-height: 1.5;
+  font-size: 1.125rem;
 }
 
 img {

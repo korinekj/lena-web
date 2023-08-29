@@ -32,6 +32,7 @@ function Header() {
     muiInstagram,
     center,
     desktop_only,
+    top,
   } = styles;
 
   const { container } = global;
@@ -47,7 +48,7 @@ function Header() {
   };
 
   return (
-    <header id='top' className={site__header}>
+    <header id={top} className={site__header}>
       <section className={`${container} ${showMobile}`}>
         <div className={phone}>
           <PhoneIphoneIcon />

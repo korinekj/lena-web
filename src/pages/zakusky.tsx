@@ -11,7 +11,7 @@ function Zákusky() {
     <Layout>
       <section className={undefined}>
         <div className={container}>
-          <h1 style={{ textAlign: "center" }}>Stránka Zákusky</h1>
+          <h1 style={{ textAlign: "center" }}>Galerie zákusků</h1>
           <ZakuskyGallery />
         </div>
       </section>

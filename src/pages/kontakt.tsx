@@ -43,11 +43,11 @@ export default function Kontakt() {
       <section className={undefined}>
         <section id={kontaktHeroImg}>
           <div className={`${container}`}>
-            <h1 id={headline}>Kontakt</h1>
+            <h2 id={headline}>Kontakt</h2>
           </div>
         </section>
         <div className={container}>
-          <h2 className={heading}>Kontaktujte mě</h2>
+          <h1 className={heading}>Kontaktujte mě</h1>
 
           <div className={wrapper}>
             <section id={contactForm}>

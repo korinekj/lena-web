@@ -1,3 +1,15 @@
+#top {
+  //background-color: #faf9f6;
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.65),
+      rgba(255, 255, 255, 0.65)
+    ),
+    url("../assets/images/vertical-waves.png");
+  background-size: auto, auto;
+  background-attachment: fixed;
+  background-repeat: repeat;
+}
+
 .muiFacebook {
   color: #3b5998;
 }

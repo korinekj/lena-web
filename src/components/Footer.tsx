@@ -28,10 +28,10 @@ function Footer() {
   } = styles;
 
   return (
-    <footer className={site__footer}>
+    <footer id={site__footer}>
       <div className={`${global.container} ${footer__wrap}`}>
         <div className={col}>
-          <h4>Kdo jsem</h4>
+          <h4>O mně</h4>
           <img src={ChefIcon} alt='' className={chef} />
           <p>
             Jmenuji se Lenka a jsem vášnivá pekařka, která ve svém volném čase

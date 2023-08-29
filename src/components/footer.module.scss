@@ -1,3 +1,14 @@
+#site__footer {
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.65),
+      rgba(255, 255, 255, 0.65)
+    ),
+    url("../assets/images/vertical-waves.png");
+  background-size: auto, auto;
+  background-attachment: fixed;
+  background-repeat: repeat;
+}
+
 .footer__wrap {
   padding: 2em 0;
 }

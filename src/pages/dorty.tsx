@@ -44,12 +44,10 @@ function Dorty() {
     <Layout>
       <section className={dortyWrap}>
         <div className={container}>
-          <h1>Stránka dorty</h1>
+          <h1>Galerie dortů</h1>
           <DortyGallery />
           <a href='#' id={jumpToTop}>
-            <ArrowCircleUpIcon fontSize='large' className={jumpToTopIcon} />{" "}
-            <br />
-            Posunout nahoru
+            <ArrowCircleUpIcon fontSize='large' className={jumpToTopIcon} />
           </a>
         </div>
       </section>
