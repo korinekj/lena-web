@@ -6,7 +6,6 @@ import * as styles from "../pages/o-mne.module.scss";
 
 import img from "../assets/images/dorty/image00058.jpeg";
 import img1 from "../assets/images/o-mne/resized/compressed/image00002.jpeg";
-import img2 from "../assets/images/o-mne/resized/compressed/image00004.jpeg";
 
 function About() {
   const { container } = global;

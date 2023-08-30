@@ -35,7 +35,7 @@ export default function Kontakt() {
   //   "image00047.jpeg",
   // ];
 
-  const url = window.location.origin;
+  console.log(img1);
 
   return (
     <Layout>
@@ -97,7 +97,7 @@ export default function Kontakt() {
               ))} */}
               <figure>
                 <a href={img1} data-lightbox='dort' data-title={img1}>
-                  <img src={img1} alt={img1} />
+                  <img src={img1} alt='Dort s jahodami, buenem a čokoládou' />
                 </a>
               </figure>
               <figure>

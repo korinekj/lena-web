@@ -3,11 +3,17 @@
     border-radius: 180px 090px 0150px 025px;
     box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5);
   }
+
+  p {
+    font-size: 1.125rem;
+  }
 }
 
 @media (min-width: 700px) {
   .about {
     display: flex;
     justify-content: space-between;
+    gap: 3em;
+    margin-bottom: 3em;
   }
 }
