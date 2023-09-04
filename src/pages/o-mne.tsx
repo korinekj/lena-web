@@ -4,7 +4,6 @@ import Layout from "../components/Layout";
 import * as global from "../assets/css/global.module.scss";
 import * as styles from "../pages/o-mne.module.scss";
 
-import img from "../assets/images/dorty/image00058.jpeg";
 import img1 from "../assets/images/o-mne/resized/compressed/image00002.jpeg";
 
 function About() {
@@ -39,11 +38,13 @@ function About() {
                 speciální události.
               </p>
               <p>
-                Děkuji, že jste se zastavili na mé stránce a ráda bych vás
+                Děkuji, že jste se zastavili na mé stránce a ráda bych vás tímto
                 pozvala na chuťovou výpravu plnou sladkých pochoutek!
               </p>
 
-              <p>Vaše Lenka - Pekařka srdcem a duší.</p>
+              <p>
+                <i>Vaše Lenka - Pekařka srdcem a duší.</i>
+              </p>
             </div>
             <div className={col}>
               {/* <img src={img} /> */}

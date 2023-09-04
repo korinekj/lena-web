@@ -40,9 +40,16 @@ function DortyGallery() {
   return (
     <section className={imgGallery}>
       {nodes.map(({ id, publicURL, childImageSharp, base }) => {
+        console.log(base);
+        const nameWithoutExtension = base.replace(/\.[^/.]+$/, "");
+
         return (
           <article key={id} className={img}>
-            <a href={publicURL} data-lightbox='dorty' data-title={base}>
+            <a
+              href={publicURL}
+              data-lightbox='dorty'
+              data-title={nameWithoutExtension}
+            >
               <GatsbyImage
                 image={childImageSharp.gatsbyImageData}
                 alt={`${base} image`}
