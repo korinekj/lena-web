@@ -40,7 +40,6 @@ function DortyGallery() {
   return (
     <section className={imgGallery}>
       {nodes.map(({ id, publicURL, childImageSharp, base }) => {
-        console.log(base);
         const nameWithoutExtension = base.replace(/\.[^/.]+$/, "");
 
         return (
