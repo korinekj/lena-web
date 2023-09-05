@@ -51,7 +51,7 @@ function DortyGallery() {
             >
               <GatsbyImage
                 image={childImageSharp.gatsbyImageData}
-                alt={`${base} image`}
+                alt={`${nameWithoutExtension}`}
               />
             </a>
           </article>
