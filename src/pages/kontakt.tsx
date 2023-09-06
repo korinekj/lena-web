@@ -5,12 +5,12 @@ import Layout from "../components/Layout";
 import * as global from "../assets/css/global.module.scss";
 import * as styles from "../pages/kontakt.module.scss";
 
-import img1 from "../assets/images/dorty/image00062.jpeg";
-import img2 from "../assets/images/dorty/image00065.jpeg";
-import img3 from "../assets/images/dorty/image00053.jpeg";
-import img4 from "../assets/images/dorty/image00059.jpeg";
-import img5 from "../assets/images/dorty/image00055.jpeg";
-import img6 from "../assets/images/dorty/image00047.jpeg";
+import img1 from "../assets/images/dorty/resized/compressed/Dort zdobený jahodami a čokoládou.jpeg";
+import img2 from "../assets/images/dorty/resized/compressed/Dort se spoustou ovoce jahody maliny a kousky kinder bueno a kinder čokolády.jpeg";
+import img3 from "../assets/images/dorty/resized/compressed/Bílý dort s jahodami a ovocem nahoře.jpeg";
+import img4 from "../assets/images/dorty/resized/compressed/Bílý svatební dort s bílými květy nahoře.jpeg";
+import img5 from "../assets/images/dorty/resized/compressed/Třípatrový dort zdobený jahodami a lesním ovocem.jpeg";
+import img6 from "../assets/images/dorty/resized/compressed/Dort ve tvaru srdce s čokoládou a oreos navrchu.jpeg";
 
 //import Test from "../components/Test";
 
@@ -34,6 +34,8 @@ export default function Kontakt() {
   //   "image00055.jpeg",
   //   "image00047.jpeg",
   // ];
+
+  const imageUrls = [img1, img2, img3, img4, img5, img6];
 
   return (
     <Layout>
@@ -83,46 +85,23 @@ export default function Kontakt() {
                 ></input>
               </form>
             </section>
+
             <section id={cake}>
-              {/* {images.map((image, index) => (
-                <a href={test} data-lightbox='dort' data-title={image}>
-                  <img
-                    src={require(`../assets/images/dorty/${image}`).default}
-                    alt={`Image ${index + 1}`}
-                    key={index}
-                  />
-                </a>
-              ))} */}
-              <figure>
-                <a href={img1} data-lightbox='dort' data-title={img1}>
-                  <img src={img1} alt={img1} />
-                </a>
-              </figure>
-              <figure>
-                <a href={img2} data-lightbox='dort' data-title={img2}>
-                  <img src={img2} alt={img2} />
-                </a>
-              </figure>
-              <figure>
-                <a href={img3} data-lightbox='dort' data-title={img3}>
-                  <img src={img3} alt={img3} />
-                </a>
-              </figure>
-              <figure>
-                <a href={img4} data-lightbox='dort' data-title={img4}>
-                  <img src={img4} alt={img4} />
-                </a>
-              </figure>
-              <figure>
-                <a href={img5} data-lightbox='dort' data-title={img5}>
-                  <img src={img5} alt={img5} />
-                </a>
-              </figure>
-              <figure>
-                <a href={img6} data-lightbox='dort' data-title={img6}>
-                  <img src={img6} alt={img6} />
-                </a>
-              </figure>
+              {imageUrls.map((imageUrl, index) => {
+                const fileName = imageUrl.split("/").pop().split("-")[0];
+
+                return (
+                  <figure key={index}>
+                    <a
+                      href={imageUrl}
+                      data-lightbox='dort'
+                      data-title={fileName}
+                    >
+                      <img src={imageUrl} alt={fileName} />
+                    </a>
+                  </figure>
+                );
+              })}
             </section>
           </div>
         </div>
