@@ -35,5 +35,29 @@ module.exports = {
         path: `${__dirname}/src/assets/images/zakusky/resized/compressed`,
       },
     },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Mlsání od Léni`,
+        short_name: `Mls`,
+        start_url: `/`,
+        background_color: `#f7f0eb`,
+        theme_color: `#a2466c`,
+        display: `standalone`,
+        icon: "src/assets/images/favicons/favicon-32x32.png",
+        icons: [
+          {
+            src: `src/assets/images/favicons/android-chrome-192x192.png`,
+            sizes: `192x192`,
+            type: `image/png`,
+          },
+          {
+            src: `src/assets/images/favicons/android-chrome-512x512.png`,
+            sizes: `512x512`,
+            type: `image/png`,
+          },
+        ],
+      },
+    },
   ],
 };
