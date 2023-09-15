@@ -12,3 +12,13 @@ function Nabidka() {
 }
 
 export default Nabidka;
+
+export const Head = () => (
+  <>
+    <title>Naše Dezerty - Sladká Nabídka | Mlsání od Léni</title>
+    <meta
+      name='description'
+      content='Prohlédněte si naši širokou nabídku dezertů a dortů na zakázku. Najděte si svůj oblíbený požitek pro chuťové buňky.'
+    />
+  </>
+);

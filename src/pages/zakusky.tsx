@@ -20,3 +20,13 @@ function Zákusky() {
 }
 
 export default Zákusky;
+
+export const Head = () => (
+  <>
+    <title>Zákusky | Mlsání od Léni</title>
+    <meta
+      name='description'
+      content='Neodolatelné drobné sladkosti, které osladí každý okamžik. Objednejte si naše zakusky a dopřejte si sladkou radost.'
+    />
+  </>
+);

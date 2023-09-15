@@ -59,3 +59,13 @@ function About() {
 }
 
 export default About;
+
+export const Head = () => (
+  <>
+    <title>O mně | Mlsání od Léni</title>
+    <meta
+      name='description'
+      content='Poznejte tvář a příběh za pečením. Lenka vás zve do svého sladkého světa a vášně pro dorty.'
+    />
+  </>
+);

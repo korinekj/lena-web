@@ -20,4 +20,14 @@ function Error() {
   );
 }
 
+export const Head = () => (
+  <>
+    <title>Chyba 404 | Mlsání od Léni</title>
+    <meta
+      name='description'
+      content='Omlouváme se, ale tato stránka neexistuje. Zkuste najít to, co hledáte, na našem hlavním webu.'
+    />
+  </>
+);
+
 export default Error;

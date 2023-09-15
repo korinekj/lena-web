@@ -55,4 +55,14 @@ function Dorty() {
   );
 }
 
+export const Head = () => (
+  <>
+    <title>Dorty | Mlsání od Léni</title>
+    <meta
+      name='description'
+      content='Objednejte si jedinečné dorty na zakázku a nechte se unést chuťovou rozkoší našich dezertů. Vítejte v našem sladkém světě!'
+    />
+  </>
+);
+
 export default Dorty;

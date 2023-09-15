@@ -110,3 +110,13 @@ export default function Kontakt() {
     </Layout>
   );
 }
+
+export const Head = () => (
+  <>
+    <title>Kontakt | Mlsání od Léni</title>
+    <meta
+      name='description'
+      content='Máte dotazy nebo připomínky? Rádi vám odpovíme. Zkontaktujte nás a spojte se s námi.'
+    />
+  </>
+);
