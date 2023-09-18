@@ -25,13 +25,16 @@ function Footer() {
     nav__item,
     footer__wrap,
     ulice,
+    link,
   } = styles;
 
   return (
     <footer id={site__footer}>
       <div className={`${global.container} ${footer__wrap}`}>
         <div className={col}>
-          <h4>O mně</h4>
+          <Link to='/o-mne' className={link}>
+            O mně
+          </Link>
           <img src={ChefIcon} alt='' className={chef} />
           <p>
             Jmenuji se Lenka a jsem vášnivá pekařka, která ve svém volném čase
@@ -46,7 +49,9 @@ function Footer() {
         </div>
 
         <div className={col}>
-          <h4>Kontaktní informace</h4>
+          <Link to='/kontakt' className={link}>
+            Kontaktní informace
+          </Link>
           <nav className={nav}>
             <ul className={nav__list}>
               <li className={nav__item}>

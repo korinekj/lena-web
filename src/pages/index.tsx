@@ -20,7 +20,7 @@ export const Head = () => (
     <title>Mlsání od Léni</title>
     <meta
       name='description'
-      content='Mlsání od Léni - Objednejte si jedinečné dorty na zakázku a vychutnejte si neodolatelné dezerty od Lenky. Zážitek pro vaše chuťové buňky!'
+      content='Mlsání od Léni - Objednejte si jedinečné dorty na zakázku a vychutnejte si neodolatelné dezerty od Lenky. Žirovnice | Pelhřimov | Vysočina.'
     />
   </>
 );

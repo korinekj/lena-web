@@ -1,7 +1,7 @@
 import React from "react";
 
 function FormularOdeslan() {
-  return <div>děkuji</div>;
+  return <div>Děkuji. Vaše zpráva byla úspěsně odeslána.</div>;
 }
 
 export default FormularOdeslan;

@@ -35,7 +35,10 @@ function About() {
                 Mým cílem je poskytnout zákazníkům dorty a jiné pochoutky, které
                 nejen vynikají chutí, ale také krásně vypadají, a to na různé
                 příležitosti, jako jsou narozeniny, svatby, oslavy a další
-                speciální události.
+                speciální události. Mé pekařské dovednosti a vášeň pro vytváření
+                těchto lahodností jsou zakotveny ve městě, které mi je domovem -
+                krásné Žirovnici. Toto malebné městečko se nachází na Vysočině v
+                okrese Pelhřimov.
               </p>
               <p>
                 Děkuji, že jste se zastavili na mé stránce a ráda bych vás tímto
