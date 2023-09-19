@@ -3,17 +3,21 @@ import Layout from "../components/Layout";
 
 import * as styles from "./404.module.scss";
 import * as global from "../assets/css/global.module.scss";
+import { Link } from "gatsby";
 
 function Error() {
-  const { errorPage } = styles;
+  const { errorPage, error } = styles;
   const { container } = global;
 
   return (
     <Layout>
       <section className={errorPage}>
         <div className={container}>
-          <h1>404</h1>
-          <h3>Stránka nenalezena</h3>
+          <div className={error}>
+            <h1>404</h1>
+            <h3>Požadovaná stránka nenalezena</h3>
+            <Link to='/'>Klikněte zde pro vrácení na hlavní stránku</Link>
+          </div>
         </div>
       </section>
     </Layout>
