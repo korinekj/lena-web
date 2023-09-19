@@ -41,11 +41,11 @@ export default function Kontakt() {
     <Layout>
       {/* <Test /> */}
       <section className={undefined}>
-        <section id={kontaktHeroImg}>
+        {/* <section id={kontaktHeroImg}>
           <div className={`${container}`}>
             <h2 id={headline}>Kontakt</h2>
           </div>
-        </section>
+        </section> */}
         <div className={container}>
           <h1 className={heading}>Kontaktujte mě</h1>
 
