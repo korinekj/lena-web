@@ -51,10 +51,20 @@ export default function Kontakt() {
 
           <div className={wrapper}>
             <section id={contactForm}>
-              <form
-                action='https://formsubmit.co/7c001bac3a554503f9ba4b35ae1fdf77'
-                method='POST'
-              >
+              {/* FORMSPARK.IO formulář */}
+              <form action='https://submit-form.com/hzCdGEyO' method='POST'>
+                {/* Custom title and message after succesful form submision */}
+                <input
+                  type='hidden'
+                  name='_feedback.success.title'
+                  value='Váš formulář byl úspěšně odeslán.'
+                />
+                <input
+                  type='hidden'
+                  name='_feedback.success.message'
+                  value='Vraťte se zpět'
+                />
+
                 <div className={formRow}>
                   <label htmlFor='fname'>Jméno</label>
                   <input type='text' id='fname' name='jméno' required />
@@ -78,11 +88,11 @@ export default function Kontakt() {
                 </div>
                 <button type='submit'>Odeslat</button>
 
-                <input
+                {/* <input
                   type='hidden'
                   name='_next'
                   value='http://localhost:8000/formular-odeslan'
-                ></input>
+                ></input> */}
               </form>
             </section>
 
