@@ -51,7 +51,10 @@ function About() {
             </div>
             <div className={col}>
               {/* <img src={img} /> */}
-              <img src={img1} />
+              <img
+                src={img1}
+                alt='Lenka z mlsáni od Léni v šatech stojící za třípatrovým dortem, který pravě přivezla na svatbu'
+              />
               {/* <img src={img2} /> */}
             </div>
           </div>
