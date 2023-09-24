@@ -53,7 +53,7 @@ function About() {
               {/* <img src={img} /> */}
               <img
                 src={img1}
-                alt='Lenka z mlsáni od Léni v šatech stojící za třípatrovým dortem, který pravě přivezla na svatbu'
+                alt='Usmívající se Lenka z mlsáni od Léni v šatech stojící za třípatrovým dortem na stole, který pravě přivezla na svatbu'
               />
               {/* <img src={img2} /> */}
             </div>
