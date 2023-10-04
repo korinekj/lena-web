@@ -44,11 +44,7 @@ function DortyGallery() {
 
         return (
           <article key={id} className={img}>
-            <a
-              href={publicURL}
-              data-lightbox='dorty'
-              data-title={nameWithoutExtension}
-            >
+            <a href={publicURL} data-lightbox='dorty'>
               <GatsbyImage
                 image={childImageSharp.gatsbyImageData}
                 alt={`${nameWithoutExtension}`}

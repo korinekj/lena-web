@@ -39,7 +39,7 @@ function ZakuskyGallery() {
       {nodes.map(({ id, base, publicURL, childImageSharp }) => {
         return (
           <article key={id} className={img}>
-            <a href={publicURL} data-lightbox='zakusky' data-title={base}>
+            <a href={publicURL} data-lightbox='zakusky'>
               <GatsbyImage
                 image={childImageSharp.gatsbyImageData}
                 alt={`${base} image`}

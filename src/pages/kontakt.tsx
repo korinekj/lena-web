@@ -102,11 +102,7 @@ export default function Kontakt() {
 
                 return (
                   <figure key={index}>
-                    <a
-                      href={imageUrl}
-                      data-lightbox='dort'
-                      data-title={fileName}
-                    >
+                    <a href={imageUrl} data-lightbox='dort'>
                       <img src={imageUrl} alt={fileName} />
                     </a>
                   </figure>
