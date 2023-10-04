@@ -37,12 +37,18 @@ function ZakuskyGallery() {
   return (
     <section className={imgGallery}>
       {nodes.map(({ id, base, publicURL, childImageSharp }) => {
+        const nameWithoutExtension = base.replace(/\.[^/.]+$/, "");
+
         return (
           <article key={id} className={img}>
-            <a href={publicURL} data-lightbox='zakusky'>
+            <a
+              href={publicURL}
+              data-lightbox='zakusky'
+              data-title={nameWithoutExtension}
+            >
               <GatsbyImage
                 image={childImageSharp.gatsbyImageData}
-                alt={`${base} image`}
+                alt={nameWithoutExtension}
               />
             </a>
           </article>

@@ -4,15 +4,33 @@ import Layout from "../components/Layout";
 
 import * as global from "../assets/css/global.module.scss";
 import * as styles from "../pages/kontakt.module.scss";
+import { graphql, useStaticQuery } from "gatsby";
+import { GatsbyImage } from "gatsby-plugin-image";
+import { KontaktyQueryResult } from "../types/types";
 
-import img1 from "../assets/images/dorty/resized/compressed/Dort zdobený jahodami a čokoládou.jpeg";
-import img2 from "../assets/images/dorty/resized/compressed/Dort se spoustou ovoce jahody maliny a kousky kinder bueno a kinder čokolády.jpeg";
-import img3 from "../assets/images/dorty/resized/compressed/Bílý dort s jahodami a ovocem nahoře.jpeg";
-import img4 from "../assets/images/dorty/resized/compressed/Bílý svatební dort s bílými květy nahoře.jpeg";
-import img5 from "../assets/images/dorty/resized/compressed/Třípatrový dort zdobený jahodami a lesním ovocem.jpeg";
-import img6 from "../assets/images/dorty/resized/compressed/Dort ve tvaru srdce s čokoládou a oreos navrchu.jpeg";
+// import img1 from "../assets/images/dorty/resized/compressed/Dort zdobený jahodami a čokoládou.jpeg";
+// import img2 from "../assets/images/dorty/resized/compressed/Dort se spoustou ovoce jahody maliny a kousky kinder bueno a kinder čokolády.jpeg";
+// import img3 from "../assets/images/dorty/resized/compressed/Bílý dort s jahodami a ovocem nahoře.jpeg";
+// import img4 from "../assets/images/dorty/resized/compressed/Bílý svatební dort s bílými květy nahoře.jpeg";
+// import img5 from "../assets/images/dorty/resized/compressed/Třípatrový dort zdobený jahodami a lesním ovocem.jpeg";
+// import img6 from "../assets/images/dorty/resized/compressed/Dort ve tvaru srdce s čokoládou a oreos navrchu.jpeg";
 
 //import Test from "../components/Test";
+
+const query = graphql`
+  query KontaktyQuery {
+    allFile(filter: { sourceInstanceName: { eq: "kontakty" } }) {
+      nodes {
+        id
+        base
+        publicURL
+        childImageSharp {
+          gatsbyImageData(layout: CONSTRAINED, placeholder: BLURRED, width: 250)
+        }
+      }
+    }
+  }
+`;
 
 export default function Kontakt() {
   const { container } = global;
@@ -23,8 +41,14 @@ export default function Kontakt() {
     formRow,
     wrapper,
     cake,
+    img,
     heading,
   } = styles;
+
+  // Retrieving data with the useStaticQuery hook and the GraphQL query defined above
+  const {
+    allFile: { nodes },
+  } = useStaticQuery<KontaktyQueryResult>(query);
 
   // const images = [
   //   "image00062.jpeg",
@@ -35,7 +59,7 @@ export default function Kontakt() {
   //   "image00047.jpeg",
   // ];
 
-  const imageUrls = [img1, img2, img3, img4, img5, img6];
+  // const imageUrls = [img1, img2, img3, img4, img5, img6];
 
   return (
     <Layout>
@@ -97,13 +121,22 @@ export default function Kontakt() {
             </section>
 
             <section id={cake}>
-              {imageUrls.map((imageUrl, index) => {
-                const fileName = imageUrl.split("/").pop().split("-")[0];
+              {nodes.map(({ id, base, publicURL, childImageSharp }) => {
+                // const fileName = imageUrl.split("/").pop().split("-")[0];
+
+                const nameWithoutExtension = base.replace(/\.[^/.]+$/, "");
 
                 return (
-                  <figure key={index}>
-                    <a href={imageUrl} data-lightbox='dort'>
-                      <img src={imageUrl} alt={fileName} />
+                  <figure key={id} className={img}>
+                    <a
+                      href={publicURL}
+                      data-lightbox='kontakty'
+                      data-title={nameWithoutExtension}
+                    >
+                      <GatsbyImage
+                        image={childImageSharp.gatsbyImageData}
+                        alt={nameWithoutExtension}
+                      />
                     </a>
                   </figure>
                 );

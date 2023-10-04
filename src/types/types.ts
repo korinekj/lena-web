@@ -31,3 +31,19 @@ export interface ZakuskyQueryResult {
     }[];
   };
 }
+
+/**
+ * Defines the expected structure of data returned by a GraphQL query that retrieves image files from the "kontakt" folder.
+ */
+export interface KontaktyQueryResult {
+  allFile: {
+    nodes: {
+      id: string;
+      base: string;
+      publicURL: string;
+      childImageSharp: {
+        gatsbyImageData: IGatsbyImageData;
+      };
+    }[];
+  };
+}

@@ -36,6 +36,13 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `kontakty`,
+        path: `${__dirname}/src/assets/images/kontakty`,
+      },
+    },
+    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `Mlsání od Léni`,
