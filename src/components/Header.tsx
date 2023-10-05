@@ -58,7 +58,7 @@ function Header() {
           <a href='https://m.me/lenka.brynova' target='_blank'>
             <FacebookIcon className={muiFacebook} />
           </a>
-          <a href='https://ig.me/m/jarda_korinek14' target='_blank'>
+          <a href='https://ig.me/m/mlsaniodleni' target='_blank'>
             <InstagramIcon className={muiInstagram} />
           </a>
         </div>
@@ -115,10 +115,7 @@ function Header() {
           <a href='https://m.me/lenka.brynova' target='_blank'>
             <FacebookIcon className={muiFacebook} />
           </a>
-          <a
-            href='https://www.instagram.com/direct/t/104498714284832'
-            target='_blank'
-          >
+          <a href='https://ig.me/m/mlsaniodleni' target='_blank'>
             <InstagramIcon className={muiInstagram} />
           </a>
         </div>
