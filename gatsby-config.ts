@@ -51,7 +51,7 @@ module.exports = {
         background_color: `#f7f0eb`,
         theme_color: `#a2466c`,
         display: `standalone`,
-        icon: "src/assets/images/favicons/favicon-32x32.png",
+        icon: "src/assets/images/favicons/favicon-48x48-png.png",
         icons: [
           {
             src: `src/assets/images/favicons/android-chrome-192x192.png`,
