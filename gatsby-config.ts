@@ -18,6 +18,7 @@ module.exports = {
       options: {
         fonts: [
           "Roboto:400,500,700", // Replace with your selected font and weights
+          "Calistoga:400",
         ],
       },
     },
