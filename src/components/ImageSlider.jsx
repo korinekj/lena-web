@@ -3,15 +3,13 @@ import React, { useEffect, useState } from "react";
 import CircleIcon from "@mui/icons-material/Circle";
 
 import slide1 from "../assets/images/hero-images/compressed/slide1.jpg";
-import slide2 from "../assets/images/hero-images/compressed/slide2.jpg";
+import slide2 from "../assets/images/test2.jpg";
 import slide3 from "../assets/images/hero-images/compressed/slide3.jpg";
-import slide4 from "../assets/images/hero-images/compressed/slide4.jpg";
 
 const images = [
   { url: slide1, title: "Image 1" },
   { url: slide2, title: "Image 2" },
   { url: slide3, title: "Image 3" },
-  { url: slide4, title: "Image 4" },
 ];
 
 function ImageSlider({ children }) {
