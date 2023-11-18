@@ -10,8 +10,8 @@ import * as styles from "./dortyGallery.module.scss";
  * GraphQL query to retrieve images from the "assets/dorty" folder.
  */
 const query = graphql`
-  query DortImage {
-    allFile(
+  query {
+    DortImage: allFile(
       filter: { sourceInstanceName: { eq: "dorty" } }
       sort: { changeTime: ASC }
     ) {
@@ -24,6 +24,17 @@ const query = graphql`
         }
       }
     }
+
+    ContentfulCakes: allContentfulCake(sort: { cake: { updatedAt: ASC } }) {
+      nodes {
+        cake {
+          gatsbyImageData(placeholder: TRACED_SVG, layout: CONSTRAINED)
+          title
+          id
+          publicUrl
+        }
+      }
+    }
   }
 `;
 
@@ -31,15 +42,18 @@ function DortyGallery() {
   // Extracting styles using destructuring
   const { imgGallery, img } = styles;
 
+  const data = useStaticQuery(query);
+  console.log(data);
+
   // Retrieving data with the useStaticQuery hook and the GraphQL query defined above
-  const {
-    allFile: { nodes },
-  } = useStaticQuery<DortyQueryResult>(query);
+  // const {
+  //   allFile: { nodes },
+  // } = useStaticQuery<DortyQueryResult>(query);
 
   // Rendering a gallery section
   return (
     <section className={imgGallery}>
-      {nodes.map(({ id, publicURL, childImageSharp, base }) => {
+      {/* {nodes.map(({ id, publicURL, childImageSharp, base }) => {
         const nameWithoutExtension = base.replace(/\.[^/.]+$/, "");
 
         return (
@@ -53,6 +67,19 @@ function DortyGallery() {
                 image={childImageSharp.gatsbyImageData}
                 alt={nameWithoutExtension}
               />
+            </a>
+          </article>
+        );
+      })} */}
+      {data.ContentfulCakes.nodes[0].cake.map((cake) => {
+        return (
+          <article key={cake.id} className={img}>
+            <a
+              href={cake.publicUrl}
+              data-lightbox='dorty'
+              data-title={cake.title}
+            >
+              <GatsbyImage image={cake.gatsbyImageData} alt={cake.title} />
             </a>
           </article>
         );
